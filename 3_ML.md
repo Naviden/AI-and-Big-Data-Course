@@ -46,7 +46,7 @@ By the end of this segment, students will be able to:
 - **Characteristics:** Simple to understand and interpret, can handle both classification and regression tasks.
 
 - **Decision Rule:**
-  At each node, the data is split based on a feature $ x_j $ and a threshold $t$. The rule is:
+  At each node, the data is split based on a feature $x_j$ and a threshold $t$. The rule is:
   $$\text{if } x_j \leq t \text{, go to left node; otherwise, go to right node.}$$
 
 - **Use Case:** Customer segmentation based on demographic data.
@@ -217,4 +217,4 @@ By the end of this segment, students will be able to:
 
 ---
 
-**Next Up: Machine Learning Tasks **
+**Next Up: Machine Learning Types**
