@@ -23,10 +23,8 @@ By the end of this segment, students will be able to:
 - **Characteristics:** Assumes a linear relationship between the input features and the target variable.
 
 - **Mathematical Formula:**
- $$
-  y = \beta_0 + \beta_1x_1 + \beta_2x_2 + \dots + \beta_nx_n + \epsilon
-  $$
-  - Where $y$ is the predicted value, $ \beta_0 $ is the intercept, $ \beta_1, \beta_2, \dots, \beta_n $ are the coefficients for each feature $ x_1, x_2, \dots, x_n $, and $ \epsilon $ is the error term.
+ $$y = \beta_0 + \beta_1x_1 + \beta_2x_2 + \dots + \beta_nx_n + \epsilon$$
+  - Where $y$ is the predicted value, $\beta_0$ is the intercept, $\beta_1, \beta_2, \dots, \beta_n$ are the coefficients for each feature $x_1, x_2, \dots, x_n$, and $\epsilon$ is the error term.
 
 - **Use Case:** Predicting house prices based on features like size, location, and number of rooms.
 
