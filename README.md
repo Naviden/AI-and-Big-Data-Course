@@ -1,4 +1,4 @@
-# Artificial Intelligence (AI) and Machine Learning (ML) Course Overview
+# Artificial Intelligence and Machine Learning Course
 
 This repository provides an overview of a comprehensive course designed for PhD students from non-technical backgrounds. The course offers a broad introduction to Artificial Intelligence (AI) and Machine Learning (ML), covering essential concepts, methodologies, and practical applications.
 
