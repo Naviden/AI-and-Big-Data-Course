@@ -33,10 +33,9 @@ By the end of this segment, students will be able to:
 - **Characteristics:** Outputs probabilities and uses a sigmoid function to map predicted values to a range between 0 and 1.
 
 - **Mathematical Formula:**
-  $$
-  P(y=1|x) = \frac{1}{1 + e^{-(\beta_0 + \beta_1x_1 + \beta_2x_2 + \dots + \beta_nx_n)}}
-  $$
-  - Where $ P(y=1|x) $ is the probability that the target variable $ y $ equals 1 given the input $ x $, and $ \beta_0, \beta_1, \dots, \beta_n $ are the model coefficients.
+  $$P(y=1|x) = \frac{1}{1 + e^{-(\beta_0 + \beta_1x_1 + \beta_2x_2 + \dots + \beta_nx_n)}}$$
+
+  - Where $P(y=1|x)$ is the probability that the target variable $y$ equals 1 given the input $x$, and $\beta_0, \beta_1, \dots, \beta_n$ are the model coefficients.
 
 - **Use Case:** Classifying emails as spam or not spam.
 
@@ -47,10 +46,8 @@ By the end of this segment, students will be able to:
 - **Characteristics:** Simple to understand and interpret, can handle both classification and regression tasks.
 
 - **Decision Rule:**
-  At each node, the data is split based on a feature $ x_j $ and a threshold $ t $. The rule is:
-  $$
-  \text{if } x_j \leq t \text{, go to left node; otherwise, go to right node.}
-  $$
+  At each node, the data is split based on a feature $ x_j $ and a threshold $t$. The rule is:
+  $$\text{if } x_j \leq t \text{, go to left node; otherwise, go to right node.}$$
 
 - **Use Case:** Customer segmentation based on demographic data.
 
@@ -59,10 +56,8 @@ By the end of this segment, students will be able to:
 - **Characteristics:** Reduces overfitting and improves accuracy by averaging the predictions of individual trees.
 
 - **Mathematical Formula (for Regression):**
-  $$
-  \hat{f}(x) = \frac{1}{M} \sum_{m=1}^{M} T_m(x)
-  $$
-  - Where $ \hat{f}(x) $ is the final prediction, $ M $ is the number of trees, and $ T_m(x) $ is the prediction from the $ m $-th tree.
+  $$\hat{f}(x) = \frac{1}{M} \sum_{m=1}^{M} T_m(x)$$
+  - Where $\hat{f}(x)$ is the final prediction, $M$ is the number of trees, and $T_m(x)$ is the prediction from the $m$-th tree.
 
 - **Use Case:** Predicting creditworthiness based on financial history.
 
@@ -71,10 +66,8 @@ By the end of this segment, students will be able to:
 - **Characteristics:** Finds the hyperplane that best separates the classes in the feature space.
 
 - **Mathematical Formula:**
-  $$
-  f(x) = \text{sign}(w \cdot x + b)
-  $$
-  - Where $ w $ is the weight vector, $ x $ is the input vector, and $ b $ is the bias term. The goal is to maximize the margin $ \frac{1}{\|w\|} $ between the two classes.
+  $$f(x) = \text{sign}(w \cdot x + b)$$
+  - Where $w$ is the weight vector, $x$ is the input vector, and $b$ is the bias term. The goal is to maximize the margin $\frac{1}{\|w\|}$ between the two classes.
 
 - **Use Case:** Image recognition, where the goal is to classify images into categories.
 
@@ -84,16 +77,12 @@ By the end of this segment, students will be able to:
 
 - **Mathematical Notation:**
   - **Neuron (in a layer):**
-    $$
-    a^{[l]} = g(W^{[l]}a^{[l-1]} + b^{[l]})
-    $$
-    - Where $ a^{[l]} $ is the activation at layer $ l $, $ W^{[l]} $ and $ b^{[l]} $ are the weights and biases, and $ g $ is the activation function (e.g., ReLU, sigmoid).
+    $$a^{[l]} = g(W^{[l]}a^{[l-1]} + b^{[l]})$$
+    - Where $a^{[l]}$ is the activation at layer $l$, $W^{[l]}$ and $b^{[l]}$ are the weights and biases, and $g$ is the activation function (e.g., ReLU, sigmoid).
 
   - **Loss Function (for binary classification):**
-    $$
-    J(W, b) = -\frac{1}{m} \sum_{i=1}^{m} \left[ y^{(i)} \log(\hat{y}^{(i)}) + (1 - y^{(i)}) \log(1 - \hat{y}^{(i)}) \right]
-    $$
-    - Where $ m $ is the number of training examples, $ y^{(i)} $ is the true label, and $ \hat{y}^{(i)} $ is the predicted probability.
+    $$J(W, b) = -\frac{1}{m} \sum_{i=1}^{m} \left[ y^{(i)} \log(\hat{y}^{(i)}) + (1 - y^{(i)}) \log(1 - \hat{y}^{(i)}) \right]$$
+    - Where $m$ is the number of training examples, $y^{(i)}$ is the true label, and $\hat{y}^{(i)}$ is the predicted probability.
 
 - **Use Case:** Deep learning applications like facial recognition and natural language processing.
 
@@ -104,10 +93,8 @@ By the end of this segment, students will be able to:
 - **Characteristics:** Iteratively assigns data points to clusters, minimizing the variance within each cluster.
 
 - **Mathematical Notation:**
-  $$
-  \text{minimize } \sum_{i=1}^{k} \sum_{x \in C_i} \| x - \mu_i \|^2
-  $$
-  - Where $ k $ is the number of clusters, $ C_i $ is the $ i $-th cluster, $ x $ is a data point, and $ \mu_i $ is the centroid of the $ i $-th cluster.
+  $$\text{minimize } \sum_{i=1}^{k} \sum_{x \in C_i} \| x - \mu_i \|^2$$
+  - Where $k$ is the number of clusters, $C_i$ is the $i$-th cluster, $x$ is a data point, and $\mu_i$ is the centroid of the $i$-th cluster.
 
 - **Use Case:** Market segmentation, where customers are grouped based on purchasing behavior.
 
@@ -117,10 +104,10 @@ By the end of this segment, students will be able to:
 
 - **Mathematical Concept:**
   - **Linkage Methods:** 
-    - **Single Linkage:** $ \text{min} \{ d(x, y) : x \in A, y \in B \} $
-    - **Complete Linkage:** $ \text{max} \{ d(x, y) : x \in A, y \in B \} $
-    - **Average Linkage:** $ \frac{1}{|A||B|} \sum_{x \in A} \sum_{y \in B} d(x, y) $
-  - Where $ A $ and $ B $ are clusters, and $ d(x, y) $ is the distance between points $ x $ and $ y $.
+    - **Single Linkage:** $\text{min} \{ d(x, y) : x \in A, y \in B \}$
+    - **Complete Linkage:** $\text{max} \{ d(x, y) : x \in A, y \in B \}$
+    - **Average Linkage:** $\frac{1}{|A||B|} \sum_{x \in A} \sum_{y \in B} d(x, y)$
+  - Where $A$ and $B$ are clusters, and $d(x, y)$ is the distance between points $x$ and $y$.
 
 - **Use Case:** Organizing documents into categories based on content similarity.
 
@@ -131,10 +118,8 @@ By the end of this segment, students will be able to:
 - **Characteristics:** Transforms the original features into a new set of uncorrelated features called principal components.
 
 - **Mathematical Notation:**
-  $$
-  Z = XW
-  $$
-  - Where $ Z $ is the matrix of principal components, $ X $ is the original data matrix, and $ W $ is the matrix of eigenvectors (principal directions).
+  $$Z = XW$$
+  - Where $Z$ is the matrix of principal components, $X$ is the original data matrix, and $W$ is the matrix of eigenvectors (principal directions).
 
 - **Use Case:** Simplifying datasets for visualization or to improve model performance.
 
@@ -173,9 +158,7 @@ By the end of this segment, students will be able to:
 
 - **Mathematical Representation:**
   - **Bias-Variance Tradeoff:**
-    $$
-    \text{Total Error} = \text{Bias}^2 + \text{Variance} + \text{Irreducible Error}
-    $$
+    $$\text{Total Error} = \text{Bias}^2 + \text{Variance} + \text{Irreducible Error}$$
     - **Bias:** Error due to overly simplistic assumptions in the learning algorithm.
     - **Variance:** Error due to the model's sensitivity to small fluctuations in the training set.
 
@@ -190,13 +173,11 @@ By the end of this segment, students will be able to:
 ### 3.1 Cross-Validation
 - **Purpose:** To assess how a model generalizes to an independent dataset.
 
-- **Method:** The dataset is divided into $ k $ subsets, and the model is trained on $ k-1 $ subsets while being tested on the remaining subset. This process is repeated $ k $ times, with each subset used as the test set once.
+- **Method:** The dataset is divided into $k$ subsets, and the model is trained on $k-1$ subsets while being tested on the remaining subset. This process is repeated $k$ times, with each subset used as the test set once.
 
 - **Mathematical Notation:**
-  $$
-  \text{CV Error} = \frac{1}{k} \sum_{i=1}^{k} \text{Error}_i
-  $$
-  - Where $ \text{Error}_i $ is the error on the $ i $-th fold.
+  $$\text{CV Error} = \frac{1}{k} \sum_{i=1}^{k} \text{Error}_i$$
+  - Where $\text{Error}_i$ is the error on the $i$-th fold.
 
 - **Use Case:** Ensures that the model's performance is consistent across different subsets of data.
 
@@ -210,18 +191,10 @@ By the end of this segment, students will be able to:
   - **False Negatives (FN):** Incorrectly predicted negative cases.
 
 - **Mathematical Representation:**
-  $$
-  \text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN}
-  $$
-  $$
-  \text{Precision} = \frac{TP}{TP + FP}
-  $$
-  $$
-  \text{Recall} = \frac{TP}{TP + FN}
-  $$
-  $$
-  \text{F1 Score} = 2 \cdot \frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}
-  $$
+  $$\text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN}$$
+  $$\text{Precision} = \frac{TP}{TP + FP}$$
+  $$\text{Recall} = \frac{TP}{TP + FN}$$
+  $$\text{F1 Score} = 2 \cdot \frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}$$
 
 - **Use Case:** Evaluating classification models, particularly in imbalanced datasets.
 
