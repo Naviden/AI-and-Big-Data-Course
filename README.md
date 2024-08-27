@@ -24,3 +24,28 @@ In addition to theoretical content, this repository also includes Python code im
 16. AI in Industry
 17. Explainable AI (XAI)
 18. Ethics and Fairness in AI
+
+### Order of chapters:
+I suggest the following order of topics:
+```mermaid
+graph TD;
+    1-->2;
+	1-->16;
+	2-->3;
+	3-->4;
+	3-->5;
+	5-->6;
+	6-->7;
+	7-->8;
+	8-->9;
+	9-->10;
+	10-->11;
+	3-->12;
+	5-->13;
+	5-->14;
+	5-->15;
+	6-->17;
+	1-->18;
+
+    
+```
