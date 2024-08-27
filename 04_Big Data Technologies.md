@@ -7,7 +7,6 @@
 - **Data Lakes**
 
 ### Objectives:
-By the end of this segment, students will be able to:
 1. Understand the key technologies that enable the processing and storage of Big Data.
 2. Recognize the roles of Hadoop, Spark, NoSQL databases, and Data Lakes in managing large-scale data.
 3. Learn how these technologies integrate with AI and ML workflows to facilitate big data analysis.
@@ -24,6 +23,7 @@ Hadoop is an open-source framework that allows for the distributed processing of
 - **MapReduce:** A programming model for processing large datasets in parallel. It divides tasks into small chunks that are processed independently and then combined.
   - **Map Function:** Processes input data and produces intermediate key-value pairs.
   - **Reduce Function:** Aggregates the intermediate key-value pairs to produce the final output.
+  [Python Implementation](https://github.com/Naviden/MapReduceExample)
 - **YARN (Yet Another Resource Negotiator):** A resource management layer that allocates system resources to various applications running in a Hadoop cluster.
 
 ### Use Case:
@@ -97,6 +97,7 @@ A Data Lake is a centralized repository that allows you to store all your struct
 ### Recommended Reading:
 - **"Hadoop: The Definitive Guide" by Tom White**
 - **"Learning Spark: Lightning-Fast Data Analytics" by Holden Karau, Andy Konwinski, Patrick Wendell, and Matei Zaharia**
+- **"Seven Databases in Seven Weeks: A Guide to Modern Databases and the NoSQL Movement" by Eric Redmond, Jim L. Wilson, and Luc Perkins**
 
 ### Further Exploration:
 - **Hadoop Ecosystem Overview:** Explore the components and tools available in the Hadoop ecosystem [here](https://hadoop.apache.org/).
