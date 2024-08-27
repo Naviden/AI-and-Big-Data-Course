@@ -80,13 +80,5 @@ An ML model is a mathematical representation of a real-world process. It is crea
 ---
 
 ### Recommended Reading:
-- **"An Introduction to Statistical Learning" by Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani**
-- **"Pattern Recognition and Machine Learning" by Christopher M. Bishop**
-
-### Further Exploration:
-- **Hands-on Machine Learning with Scikit-Learn:** Explore Python examples of ML models [here](https://scikit-learn.org/stable/).
-- **Introduction to Machine Learning:** Watch an introductory video on ML concepts [YouTube link].
-
----
-
-**Next Up: Machine Learning Models**
+- **["Pattern Recognition and Machine Learning" by Christopher M. Bishop](https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf)**
+- **["An Introduction to Statistical Learning" by Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani](https://www.stat.berkeley.edu/users/rabbee/s154/ISLR_First_Printing.pdf)**
