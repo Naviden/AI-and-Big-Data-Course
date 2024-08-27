@@ -7,8 +7,7 @@
 - **Big Data**
 
 ### Objectives:
-By the end of this segment, students will be able to:
-1. Understand the critical role of data in Artificial Intelligence (AI).
+1. Understand the critical role of data in AI.
 2. Identify and categorize different types of data used in AI, including structured, unstructured, and specific forms like record data, graph-based data, and ordered data.
 3. Recognize the importance of data quality and its impact on AI models.
 4. Gain an introductory understanding of Big Data and its applications in AI.
@@ -28,22 +27,22 @@ Data is the foundation of AI. AI systems learn from data, identify patterns, and
 
 ## 2. Types of Data
 
-Understanding the types of data used in AI is essential for choosing the right algorithms and preprocessing techniques.
+Understanding the types of data used in AI is essential for choosing the right algorithms and preprocessing techniques. We can divided data at least from two different aspects:
 
+## Data types by their structure:
 ### 2.1 Structured Data
 - **Definition:** Data that is organized in a predefined manner, often in tabular form (e.g., spreadsheets, SQL databases).
-- **Examples:** Customer records, financial transactions, sensor readings.
+  - **Examples:** Customer records, financial transactions, sensor readings.
 
 ### 2.2 Unstructured Data
 - **Definition:** Data that does not have a predefined structure and is often more complex to analyze.
-- **Examples:** Text documents, images, audio, and video files.
+  - **Examples:** Text documents, images, audio, and video files.
 
 ### 2.3 Semi-Structured Data
 - **Definition:** Data that does not conform to a rigid structure but has some organizational properties (e.g., JSON, XML files).
-- **Examples:** Emails, logs, and HTML documents.
+  - **Examples:** Emails, logs, and HTML documents.
 
----
-
+## Data types by their nature:
 ### 2.4 Record Data
 - **Definition:** Record data is data where each record (or row) represents an individual entity or transaction.
 - **Transaction or Market-Based Data:** 
@@ -93,6 +92,7 @@ Data quality is crucial for the success of AI models. Poor-quality data can lead
 - **Consistency:** Data should be consistent across different datasets and sources.
 - **Timeliness:** Data should be up-to-date and relevant to the current context.
 - **Validity:** Data should conform to defined formats and standards.
+_[More detail + Python notebooks](https://github.com/Naviden/Data-Quality-Issues)_
 
 ### Impact of Poor Data Quality:
 - **Bias in Models:** Inaccurate or incomplete data can introduce bias, leading to unfair or incorrect predictions.
@@ -118,14 +118,4 @@ Big Data refers to extremely large datasets that are difficult to manage, proces
 ---
 
 ### Recommended Reading:
-- **"Data Science for Business" by Foster Provost and Tom Fawcett**
-- **"Big Data: A Revolution That Will Transform How We Live, Work, and Think" by Viktor Mayer-Schönberger and Kenneth Cukier**
-- **"Introduction to Data Mining" by Pang-Ning Tan, Michael Steinbach, and Vipin Kumar**
-
-### Further Exploration:
-- **Data Quality Assessment:** Explore tools and techniques for assessing data quality [here](https://towardsdatascience.com/data-quality-and-how-to-implement-it-in-your-data-pipeline-7b0d83a4c987).
-
-
----
-
-**Next Up: Machine Learning Basics**
+- **["Introduction to Data Mining" by Pang-Ning Tan, Michael Steinbach, and Vipin Kumar](https://www.ceom.ou.edu/media/docs/upload/Pang-Ning_Tan_Michael_Steinbach_Vipin_Kumar_-_Introduction_to_Data_Mining-Pe_NRDK4fi.pdf)**
