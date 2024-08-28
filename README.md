@@ -26,26 +26,27 @@ In addition to theoretical content, this repository also includes Python code im
 18. Ethics and Fairness in AI
 
 ### Order of chapters:
-I suggest the following order of topics:
+In case you don't want to follow the order of topics/chapters, I highly recommend considering the dependency among topics as shown below:
+
 ```mermaid
 graph TD;
     1-->2;
 	1-->16;
+	1-->14;
 	2-->3;
-	3-->4;
+	2-->4;
 	3-->5;
+	4-->13;
 	5-->6;
-	6-->7;
-	7-->8;
-	8-->9;
-	9-->10;
-	10-->11;
-	3-->12;
+	5-->7;
+	5-->12;
 	5-->13;
-	5-->14;
-	5-->15;
-	6-->17;
-	1-->18;
+	6-->8;
+	7-->8;
+	6-->10;
+	6-->11;
+	8-->9;
+	8-->15;
 
     
 ```
