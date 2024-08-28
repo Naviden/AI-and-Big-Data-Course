@@ -6,7 +6,6 @@
 - **Unsupervised Learning**
 
 ### Objectives:
-By the end of this segment, students will be able to:
 1. Understand the key differences between supervised and unsupervised learning.
 2. Identify various algorithms used in both supervised and unsupervised learning.
 3. Apply knowledge of these learning types to appropriate problem domains.
