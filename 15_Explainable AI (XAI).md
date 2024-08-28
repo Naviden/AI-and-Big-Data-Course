@@ -9,7 +9,6 @@
   - Global Models (SHAP)
 
 ### Objectives:
-By the end of this segment, students will be able to:
 1. Understand the principles and importance of explainable AI.
 2. Recognize the need for transparency in AI models, especially in critical applications.
 3. Learn about specific techniques such as LIME and SHAP that are used to achieve explainability in machine learning models.
@@ -83,8 +82,8 @@ Where $S$ is a subset of all features $F$, and $f(S)$ is the model prediction ba
 ---
 
 ### Recommended Reading:
-- **"Interpretable Machine Learning: A Guide for Making Black Box Models Explainable" by Christoph Molnar**
-- **"The Principles of Explainable AI" by DARPA XAI Program**
+- **["Interpretable Machine Learning: A Guide for Making Black Box Models Explainable" by Christoph Molnar](https://christophm.github.io/interpretable-ml-book/)**
+- **["A Survey on the Explainability of Supervised Machine Learning" by Burkart and Huber](https://dl.acm.org/doi/pdf/10.1613/jair.1.12228)**
 
 ### Further Exploration:
 - **LIME Implementation:** Explore a Python implementation of LIME [here](https://github.com/marcotcr/lime).

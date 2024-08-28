@@ -8,7 +8,6 @@
 - **A/B Testing**
 
 ### Objectives:
-By the end of this segment, students will be able to:
 1. Understand the process of deploying machine learning models in production environments.
 2. Learn about CI/CD practices for maintaining and updating models.
 3. Explore techniques for monitoring model performance over time.
@@ -98,9 +97,8 @@ A/B testing, also known as split testing, is a method of comparing two versions 
 ---
 
 ### Recommended Reading:
-- **"Building Machine Learning Powered Applications: Going from Idea to Product" by Emmanuel Ameisen**
-- **"Machine Learning Engineering" by Andriy Burkov**
+- **["Building Machine Learning Powered Applications: Going from Idea to Product" by Emmanuel Ameisen](https://www.oreilly.com/library/view/building-machine-learning/9781492045106/)**
+
 
 ### Further Exploration:
-- **Model Deployment with Docker:** Learn how to containerize and deploy machine learning models using Docker [here](https://www.docker.com/).
 - **CI/CD for ML Models:** Explore a tutorial on setting up CI/CD pipelines for machine learning [here](https://mlops.community/).

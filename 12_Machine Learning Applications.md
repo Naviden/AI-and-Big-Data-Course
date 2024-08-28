@@ -5,7 +5,6 @@
 - **Predictive Analytics**
 
 ### Objectives:
-By the end of this segment, students will be able to:
 1. Understand the key applications of machine learning in Natural Language Processing (NLP) and Predictive Analytics.
 2. Identify common algorithms and techniques used in these applications.
 3. Apply these concepts to solve real-world problems in NLP and predictive analytics.
@@ -110,13 +109,8 @@ Predictive Analytics involves using statistical algorithms and machine learning 
 ---
 
 ### Recommended Reading:
-- **"Speech and Language Processing" by Daniel Jurafsky and James H. Martin**
-- **"Applied Predictive Modeling" by Max Kuhn and Kjell Johnson**
+- **["Speech and Language Processing" by Daniel Jurafsky and James H. Martin](https://web.stanford.edu/~jurafsky/slp3/ed3book.pdf)**
+- **["Applied Predictive Modeling" by Max Kuhn and Kjell Johnson](https://link.springer.com/book/10.1007/978-1-4614-6849-3)**
 
 ### Further Exploration:
 - **NLP with Python:** Explore the NLTK library for natural language processing [here](https://www.nltk.org/).
-- **Predictive Analytics in Python:** Explore the Scikit-learn library for building predictive models [here](https://scikit-learn.org/stable/).
-
----
-
-**Next Up: Explainable AI**

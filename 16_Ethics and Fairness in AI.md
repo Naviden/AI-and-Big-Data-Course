@@ -7,7 +7,6 @@
 - **Fairness**
 
 ### Objectives:
-By the end of this segment, students will be able to:
 1. Understand the ethical implications of AI technologies.
 2. Identify the sources and impacts of bias in AI systems.
 3. Explore the concepts of fairness in AI and the importance of developing ethical AI systems.
@@ -70,8 +69,7 @@ Fairness in AI refers to the principle that AI systems should treat all individu
 ---
 
 ### Recommended Reading:
-- **"Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy" by Cathy O'Neil**
-- **"Ethics of Artificial Intelligence and Robotics" by Vincent C. Müller**
+- **["Ethics of Artificial Intelligence and Robotics" by Vincent C. Müller](https://plato.stanford.edu/entries/ethics-ai/)**
 
 ### Further Exploration:
 - **AI Ethics Guidelines:** Review the AI Ethics Guidelines developed by organizations like the European Commission [here](https://ec.europa.eu/digital-strategy/en/ai-ethics-guidelines).
