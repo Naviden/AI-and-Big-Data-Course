@@ -11,19 +11,17 @@ In addition to theoretical content, this repository also includes Python code im
 3. Data Preprocessing and Feature Engineering
 4. Big Data Technologies
 5. Machine Learning Basics
-6. Machine Learning Models
-7. Machine Learning Types
-8. Machine Learning Tasks
-9. Machine Learning Algorithm Families
-10. Advanced Machine Learning Models
-11. Deep Learning
-12. Reinforcement Learning
-13. Time Series Analysis in Machine Learning
-14. Machine Learning Applications
-15. Model Deployment and Monitoring
-16. AI in Industry
-17. Explainable AI (XAI)
-18. Ethics and Fairness in AI
+6. Machine Learning Types
+7. Machine Learning Model Evaluation
+8. Advanced Machine Learning Models
+9. Deep Learning
+10. Reinforcement Learning
+11. Time Series Analysis in Machine Learning
+12. Machine Learning Applications
+13. Model Deployment and Monitoring
+14. AI in Industry
+15. Explainable AI (XAI)
+16. Ethics and Fairness in AI
 
 ### Order of chapters:
 In case you don't want to follow the order of topics/chapters, I highly recommend considering the dependency among topics as shown below:

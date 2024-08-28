@@ -7,7 +7,6 @@
 - **Generative Adversarial Networks (GANs)**
 
 ### Objectives:
-By the end of this segment, students will be able to:
 1. Understand the key concepts and applications of advanced machine learning models.
 2. Learn how to implement and apply models like SVM, GBM, RNN, and GANs to complex tasks.
 3. Recognize the strengths and challenges of each model, particularly in specialized use cases.
