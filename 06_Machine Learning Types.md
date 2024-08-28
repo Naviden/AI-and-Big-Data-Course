@@ -91,12 +91,9 @@ $$ g(x_i) \rightarrow \text{clusters or reduced features} $$
 ---
 
 ### Recommended Reading:
-- **"Pattern Recognition and Machine Learning" by Christopher M. Bishop**
-- **"Machine Learning: A Probabilistic Perspective" by Kevin P. Murphy**
+- **["Pattern Recognition and Machine Learning" by Christopher M. Bishop](https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf)**
+- **["An Introduction to Statistical Learning" by Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani](https://www.stat.berkeley.edu/users/rabbee/s154/ISLR_First_Printing.pdf)**
+- **["Machine Learning: A Probabilistic Perspective" by Kevin P. Murphy](https://probml.github.io/pml-book/book0.html)**
 
 ### Further Exploration:
 - **Scikit-Learn Documentation:** Explore practical examples of supervised and unsupervised learning [here](https://scikit-learn.org/stable/).
-
----
-
-**Next Up: Machine Learning Tasks**
