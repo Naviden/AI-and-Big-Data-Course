@@ -48,5 +48,4 @@
 ---
 
 ### Recommended Reading:
-- **"An Introduction to Statistical Learning" by Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani**
-- **"Pattern Recognition and Machine Learning" by Christopher M. Bishop**
+- **["Evaluating Machine Learning Models" by Alice Zheng](https://www.oreilly.com/library/view/evaluating-machine-learning/9781492048756/)**

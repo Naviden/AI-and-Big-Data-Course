@@ -7,7 +7,6 @@
 - **Deep Q-Networks (DQNs)**
 
 ### Objectives:
-By the end of this segment, students will be able to:
 1. Understand the fundamental concepts of reinforcement learning (RL) and how it differs from other types of machine learning.
 2. Learn about Markov Decision Processes (MDPs) as a formal framework for RL.
 3. Explore Q-learning and Deep Q-Networks (DQNs) as key techniques in RL.
@@ -117,9 +116,8 @@ Where:
 ---
 
 ### Recommended Reading:
-- **"Reinforcement Learning: An Introduction" by Richard S. Sutton and Andrew G. Barto**
-- **"Deep Reinforcement Learning Hands-On" by Maxim Lapan**
+- **["Reinforcement Learning: An Introduction" by Richard S. Sutton and Andrew G. Barto](https://ieeexplore.ieee.org/document/712192)**
+- **"Deep Reinforcement Learning Hands-On" by Maxim Lapan [Book Repository](https://github.com/PacktPublishing/Deep-Reinforcement-Learning-Hands-On)**
 
 ### Further Exploration:
 - **OpenAI Gym:** Explore reinforcement learning environments and practice implementing RL algorithms [here](https://gym.openai.com/).
-- **Introduction to Q-learning and DQNs:** Watch a video tutorial on Q-learning and Deep Q-Networks [YouTube link].
