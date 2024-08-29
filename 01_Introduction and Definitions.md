@@ -15,7 +15,7 @@ Artificial Intelligence (AI) refers to the simulation of human intelligence in m
 
 ### Key Definitions:
 - **Artificial Intelligence (AI):** A branch of computer science that focuses on creating systems capable of performing tasks that typically require human intelligence.
-- **Machine Learning (ML):** A subset of AI that involves training machines to learn from data and make predictions or decisions without being explicitly programmed.
+- **Machine Learning (ML):** A subset of AI that involves training machines to learn from data and make predictions or decisions without being explicitly programmed.[see section 5](./05_Machine Learning Basics.md)
 - **Deep Learning:** A specialized area of machine learning involving neural networks with many layers, enabling machines to recognize patterns and perform complex tasks like image and speech recognition.
 
 ---
