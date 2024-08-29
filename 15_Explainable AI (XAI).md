@@ -86,5 +86,6 @@ Where $S$ is a subset of all features $F$, and $f(S)$ is the model prediction ba
 - **["A Survey on the Explainability of Supervised Machine Learning" by Burkart and Huber](https://dl.acm.org/doi/pdf/10.1613/jair.1.12228)**
 
 ### Further Exploration:
+- **[Introduction to XAI Repository](https://github.com/Naviden/Introduction-to-XAI)**
 - **LIME Implementation:** Explore a Python implementation of LIME [here](https://github.com/marcotcr/lime).
 - **SHAP Documentation:** Learn more about SHAP and how to apply it to your models [here](https://shap.readthedocs.io/).
