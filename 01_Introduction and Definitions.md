@@ -15,19 +15,19 @@ Artificial Intelligence (AI) refers to the simulation of human intelligence in m
 
 ### Key Definitions:
 - **Artificial Intelligence (AI):** A branch of computer science that focuses on creating systems capable of performing tasks that typically require human intelligence.
-- **Machine Learning (ML):** A subset of AI that involves training machines to learn from data and make predictions or decisions without being explicitly programmed.[see section 5](./05_Machine Learning Basics.md)
+- **Machine Learning (ML):** A subset of AI that involves training machines to learn from data and make predictions or decisions without being explicitly programmed.
 - **Deep Learning:** A specialized area of machine learning involving neural networks with many layers, enabling machines to recognize patterns and perform complex tasks like image and speech recognition.
 
 ---
 ## 2. Practical Examples of AI
 
-### Example 1: Spam Email Detection
+#### Example 1: Spam Email Detection
 AI is used in email services to detect and filter out spam messages. Machine learning algorithms analyze the content of emails and classify them as spam or not spam based on learned patterns.
 
-### Example 2: Recommendation Systems
+#### Example 2: Recommendation Systems
 Platforms like Netflix and Amazon use AI to recommend movies, shows, or products to users. These systems use algorithms that analyze user behavior and preferences to suggest items that the user might be interested in.
 
-### Example 3: Virtual Assistants
+#### Example 3: Virtual Assistants
 AI powers virtual assistants like Siri and Alexa, enabling them to understand natural language, recognize voice commands, and perform tasks such as setting reminders, sending messages, or playing music.
 
 ---
@@ -118,7 +118,7 @@ Algorithms can be classified in various ways, each offering distinct perspective
   - **Example**: **N-Queens problem**, where queens are placed on a chessboard one by one, backtracking whenever a conflict arises, to find all valid configurations.
 ---
 
-## 4. How AI is Related to Algorithms
+## 4. How AI and Algorithms are related to each other
 
 In AI, algorithms play a crucial role in enabling machines to learn, reason, make decisions, and adapt to new data or environments. Here are some examples:
 
@@ -158,4 +158,4 @@ AI that deals with human language relies on specialized algorithms to understand
 - **["Artificial Intelligence: A Modern Approach" by Stuart Russell and Peter Norvig](https://aima.cs.berkeley.edu/)**
 - **["Machine Learning Yearning" by Andrew Ng](https://info.deeplearning.ai/machine-learning-yearning-book)**
 - **["Algorithms Illuminated" by Tim Roughgarden](https://www.algorithmsilluminated.org/)**
-- **"Introduction to Algorithms" by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein**
+- **["Introduction to Algorithms" by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein](https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/)**
