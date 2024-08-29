@@ -22,7 +22,9 @@ Support Vector Machines (SVM) are supervised learning models used for classifica
 - **Hyperplane:** A decision boundary that separates different classes in the feature space. The optimal hyperplane is the one that maximizes the margin between the classes.
 - **Margin:** The distance between the hyperplane and the closest data points (support vectors) from each class.
 - **Kernel Trick:** A technique that allows SVM to perform non-linear classification by mapping the input features into a higher-dimensional space.
-
+![SVM Example](https://scikit-learn.org/stable/_images/sphx_glr_plot_iris_svc_001.png)
+Example of classification with SVM classifiers.
+_[Image Source](https://scikit-learn.org/stable/modules/svm.html)_
 ### Mathematical Formulation:
 Given a set of training data $(x_i, y_i)$ where $x_i$ represents the feature vector and $y_i \in \{-1, 1\}$ represents the class label, SVM aims to find the hyperplane defined by:
 
@@ -71,6 +73,10 @@ Where:
 ### Definition:
 Recurrent Neural Networks (RNN) are a class of neural networks designed for sequential data. Unlike feedforward neural networks, RNNs have connections that form cycles, allowing them to maintain a memory of previous inputs, making them ideal for tasks like time series analysis and natural language processing.
 
+![RNN](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Recurrent_neural_network_unfold.svg/2880px-Recurrent_neural_network_unfold.svg.png)
+Anatomy of an RNN architecture.
+_[Image Source](https://en.wikipedia.org/wiki/Recurrent_neural_network)_
+
 ### Key Concepts:
 - **Hidden State:** The memory of the network that captures information from previous time steps.
 - **Long Short-Term Memory (LSTM):** A variant of RNNs designed to overcome the problem of vanishing gradients, allowing the network to learn long-term dependencies.
@@ -118,10 +124,10 @@ Where:
 ---
 
 ### Recommended Reading:
-- **"Pattern Recognition and Machine Learning" by Christopher M. Bishop**
-- **"Deep Learning" by Ian Goodfellow, Yoshua Bengio, and Aaron Courville**
+- **["Pattern Recognition and Machine Learning" by Christopher M. Bishop](https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf)**
+- **["An Introduction to Statistical Learning" by Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani](https://www.stat.berkeley.edu/users/rabbee/s154/ISLR_First_Printing.pdf)**
+- **["Deep Learning" by Ian Goodfellow, Yoshua Bengio, and Aaron Courville](https://www.deeplearningbook.org/)**
 
 ### Further Exploration:
 - **SVM Tutorial:** Learn how to implement Support Vector Machines [here](https://scikit-learn.org/stable/modules/svm.html).
-- **Introduction to GANs:** Watch an introductory video on Generative Adversarial Networks [YouTube link].
 - **Implementing RNNs:** Explore a tutorial on Recurrent Neural Networks [here](https://pytorch.org/tutorials/intermediate/char_rnn_classification_tutorial.html).

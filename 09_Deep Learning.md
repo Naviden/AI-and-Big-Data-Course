@@ -95,8 +95,8 @@ Transfer Learning is a technique in deep learning where a model developed for a 
 ---
 
 ### Recommended Reading:
-- **"Deep Learning" by Ian Goodfellow, Yoshua Bengio, and Aaron Courville**
-- **"Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow" by Aurélien Géron**
+- **["Deep Learning" by Ian Goodfellow, Yoshua Bengio, and Aaron Courville](https://www.deeplearningbook.org/)**
+- **["Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow" by Aurélien Géron](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/)**
 
 ### Further Exploration:
 - **CNN Architectures:** Explore popular CNN architectures like VGG, ResNet, and Inception [here](https://keras.io/api/applications/).

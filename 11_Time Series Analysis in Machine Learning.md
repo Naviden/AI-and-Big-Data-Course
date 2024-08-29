@@ -7,7 +7,6 @@
 - **LSTM for Time Series**
 
 ### Objectives:
-By the end of this segment, students will be able to:
 1. Understand the fundamentals of time series analysis and forecasting.
 2. Learn how ARIMA models are used for time series prediction.
 3. Explore the use of Long Short-Term Memory (LSTM) networks for handling time-dependent data in machine learning.
@@ -108,8 +107,8 @@ Where:
 ---
 
 ### Recommended Reading:
-- **"Time Series Analysis: Forecasting and Control" by George E. P. Box, Gwilym M. Jenkins, and Gregory C. Reinsel**
-- **"Deep Learning for Time Series Forecasting" by Jason Brownlee**
+- **["Forecasting: Principles and Practice" by Rob J Hyndman and George Athanasopoulos](https://otexts.com/fpp3/)**
+
 
 ### Further Exploration:
 - **ARIMA with Python:** Learn how to implement ARIMA models for time series forecasting [here](https://www.statsmodels.org/stable/index.html).

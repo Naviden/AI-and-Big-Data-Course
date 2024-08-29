@@ -8,7 +8,6 @@
 - **AI in Finance**
 
 ### Objectives:
-By the end of this segment, students will be able to:
 1. Understand how AI is being applied across various industries.
 2. Explore the concept of Industry 4.0 and how AI is driving this transformation.
 3. Learn about specific use cases of AI in healthcare and finance, including real-world examples and case studies.
@@ -72,12 +71,6 @@ AI is transforming the finance industry by automating processes, enhancing decis
 
 ### Case Study:
 - **Robo-Advisors:** Companies like Betterment and Wealthfront are using AI to provide personalized financial advice and portfolio management services. These robo-advisors use algorithms to assess clients' financial goals and risk tolerance, creating and managing investment portfolios automatically.
-
----
-
-### Recommended Reading:
-- **"AI Superpowers: China, Silicon Valley, and the New World Order" by Kai-Fu Lee**
-- **"Prediction Machines: The Simple Economics of Artificial Intelligence" by Ajay Agrawal, Joshua Gans, and Avi Goldfarb**
 
 ### Further Exploration:
 - **AI in Manufacturing:** Explore how AI is driving Industry 4.0 and smart manufacturing [here](https://www.weforum.org/agenda/2020/01/industry-4-0-artificial-intelligence-robotics/).
