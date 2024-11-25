@@ -107,13 +107,13 @@ Feature selection involves identifying and selecting the most relevant features 
 Feature extraction is the process of transforming raw data into a set of features that can be used as inputs to a machine learning model. This process is particularly useful when the original data is too large or complex to be used directly.
 
 ### Techniques:
-- **Principal Component Analysis (PCA):**
+- **[Principal Component Analysis (PCA)](https://www.youtube.com/watch?v=FgakZw6K1QQ):**
   - PCA reduces the dimensionality of the data by transforming the original features into a new set of uncorrelated features (principal components) that capture the most variance in the data.
   - Mathematical Formulation:
       $$Z = XW$$
     - Where $Z$ is the matrix of principal components, $X$ is the original data matrix, and $W$ is the matrix of eigenvectors.
-  - Example: Reducing the dimensionality of a dataset with hundreds of features to a smaller set of principal components while retaining most of the variance.
-- **Text Feature Extraction (TF-IDF, Word Embeddings):**
+  - Example: In this scenario, a dataset containing numerous financial transaction features (e.g., transaction amount, merchant ID, location, time of day, device type) can be highly dimensional, with many features being correlated or redundant. PCA reduces the dataset to its principal components, capturing the most significant patterns in the data. This lower-dimensional representation enables faster and more accurate fraud detection by highlighting anomalies without the noise of irrelevant or redundant features.
+- **Text Feature Extraction ([TF-IDF](https://www.youtube.com/watch?v=vZAXpvHhQow), [Word Embeddings](https://www.youtube.com/watch?v=viZrOnJclY0&t=11s)):**
   - Techniques like TF-IDF and word embeddings convert text data into numerical features that can be used by machine learning models.
   - Example: Converting a corpus of text into TF-IDF vectors to use in text classification tasks.
 _[Python Code](https://github.com/Naviden/AI-and-Big-Data-Course/blob/main/Python%20Code/sklearn_PCA.py)_
