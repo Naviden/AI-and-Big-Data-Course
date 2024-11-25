@@ -106,10 +106,31 @@ _[More detail + Python notebooks](https://github.com/Naviden/Data-Quality-Issues
 Big Data refers to extremely large datasets that are difficult to manage, process, and analyze using traditional data-processing tools. Big Data is characterized by the "3 Vs": Volume, Velocity, and Variety.
 
 ### Characteristics of Big Data:
-- **Volume:** The sheer amount of data generated every day (e.g., social media, sensor data).
-- **Velocity:** The speed at which data is generated and processed (e.g., real-time data streams).
-- **Variety:** The different types of data available (e.g., structured, unstructured, and semi-structured data).
 
+- **Volume**:  
+  - **Definition**: The sheer amount of data generated every day.  
+  - **Examples**: Social media posts, sensor data, transaction records.  
+  - **Use Case**: Storage and processing systems like distributed file systems (e.g., Hadoop HDFS).  
+
+- **Velocity**:  
+  - **Definition**: The speed at which data is generated, collected, and processed.  
+  - **Examples**: Real-time data streams from IoT devices, stock market feeds.  
+  - **Use Case**: Real-time analytics, fraud detection, and dynamic pricing systems.  
+
+- **Variety**:  
+  - **Definition**: The diversity of data formats and types.  
+  - **Examples**: Structured data (databases), unstructured data (text, images), and semi-structured data (JSON, XML).  
+  - **Use Case**: Integrating and analyzing data from multiple sources, such as combining text, images, and videos for multimedia analytics.  
+
+- **Veracity**:  
+  - **Definition**: The uncertainty or reliability of data.  
+  - **Examples**: Inconsistent, noisy, or incomplete data from social media or user-generated content.  
+  - **Use Case**: Ensuring data quality for decision-making processes, such as customer feedback analysis.  
+
+- **Value**:  
+  - **Definition**: The usefulness or relevance of data in generating insights and driving decisions.  
+  - **Examples**: Business intelligence derived from sales data or customer segmentation.  
+  - **Use Case**: Monetizing data through predictive analytics, personalized marketing, or operational optimizations.  
 ### Big Data in AI:
 - **Scalability:** AI models must be scalable to handle and learn from vast amounts of data.
 - **Advanced Analytics:** Big Data allows for more complex and comprehensive analysis, leading to better insights and predictions.
