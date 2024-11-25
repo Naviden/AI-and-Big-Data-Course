@@ -197,7 +197,7 @@ Scaling adjusts the magnitude of feature values to make them comparable. Unlike 
 
 Consider the following dataset with two features:
 
-| Feature 1 (Age) | Feature 2 (Income in $) |
+| Age |Income |
 |------------------|-------------------------|
 | 25               | 50,000                 |
 | 30               | 60,000                 |
@@ -208,7 +208,7 @@ Consider the following dataset with two features:
 ---
 
 ### Normalization (Min-Max Scaling)
-| Feature 1 (Age, normalized) | Feature 2 (Income, normalized) |
+| Age, normalized |Income, normalized |
 |-----------------------------|---------------------------------|
 | 0.0                         | 0.0                            |
 | 0.25                        | 0.1                            |
@@ -220,7 +220,7 @@ Consider the following dataset with two features:
 
 ### Scaling (MaxAbs Scaling)
 Scaling adjusts values by dividing them by the maximum absolute value of each feature:
-| Feature 1 (Age, scaled) | Feature 2 (Income, scaled) |
+| Age, scaled |Income, scaled)|
 |--------------------------|---------------------------|
 | 0.556                    | 0.333                    |
 | 0.667                    | 0.4                      |
