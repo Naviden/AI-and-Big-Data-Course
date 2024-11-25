@@ -208,30 +208,6 @@ Consider the following dataset with two features:
 ---
 
 ### Normalization (Min-Max Scaling)
-Normalization rescales the values to a range, typically [0, 1], using the formula:
-
-```
-x' = (x - x_min) / (x_max - x_min)
-```
-
-#### Calculations:
-For **Feature 1 (Age)**:
-- `x_min = 25, x_max = 45`
-
-```
-For x = 25: x' = (25 - 25) / (45 - 25) = 0
-For x = 45: x' = (45 - 25) / (45 - 25) = 1
-```
-
-For **Feature 2 (Income)**:
-- `x_min = 50,000, x_max = 150,000`
-
-```
-For x = 50,000: x' = (50,000 - 50,000) / (150,000 - 50,000) = 0
-For x = 150,000: x' = (150,000 - 50,000) / (150,000 - 50,000) = 1
-```
-
-#### Result:
 | Feature 1 (Age, normalized) | Feature 2 (Income, normalized) |
 |-----------------------------|---------------------------------|
 | 0.0                         | 0.0                            |
@@ -244,29 +220,6 @@ For x = 150,000: x' = (150,000 - 50,000) / (150,000 - 50,000) = 1
 
 ### Scaling (MaxAbs Scaling)
 Scaling adjusts values by dividing them by the maximum absolute value of each feature:
-
-```
-x' = x / |x_max|
-```
-
-#### Calculations:
-For **Feature 1 (Age)**:
-- `x_max = 45`
-
-```
-For x = 25: x' = 25 / 45 ≈ 0.556
-For x = 45: x' = 45 / 45 = 1
-```
-
-For **Feature 2 (Income)**:
-- `x_max = 150,000`
-
-```
-For x = 50,000: x' = 50,000 / 150,000 ≈ 0.333
-For x = 150,000: x' = 150,000 / 150,000 = 1
-```
-
-#### Result:
 | Feature 1 (Age, scaled) | Feature 2 (Income, scaled) |
 |--------------------------|---------------------------|
 | 0.556                    | 0.333                    |
