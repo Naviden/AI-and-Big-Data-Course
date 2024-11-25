@@ -161,6 +161,162 @@ Scaling involves adjusting the range of features to bring them to a similar scal
 
 ---
 
+## Difference Between Normalization and Scaling
+
+Normalization and scaling are essential preprocessing techniques used to prepare data for machine learning algorithms. While they may seem similar, they serve different purposes and operate in distinct ways.
+
+---
+
+### Normalization
+Normalization adjusts the values of features to a common scale, often between a specified range like [0, 1], without distorting the relative differences between the feature values. This process is particularly beneficial for algorithms sensitive to the scale of data, such as KNN, SVM, or PCA. Normalization often involves transforming the distribution of feature values.
+
+- **Focus**: Brings features to a common scale by modifying their distribution.
+- **Techniques**: Min-Max Scaling, Z-score Standardization.
+- **Output**: Feature values are transformed to a specific range or distribution.
+- **Example**: Rescaling pixel intensity values in images to the range [0, 1].
+
+---
+
+### Scaling
+Scaling adjusts the magnitude of feature values to make them comparable. Unlike normalization, scaling does not constrain the data to a specific range but ensures that features with different units or magnitudes do not disproportionately influence the model.
+
+- **Focus**: Adjusts the range of feature values to make them comparable by magnitude.
+- **Techniques**: MaxAbs Scaling, Robust Scaling.
+- **Output**: Data retains its structure but is scaled to a common magnitude.
+- **Example**: Scaling features like income (in thousands) and age (in years) to prevent income from dominating due to its larger values.
+
+---
+
+### Key Distinction
+- **Normalization** often involves transforming the distribution of data and focuses on statistical properties like the mean and standard deviation.
+- **Scaling** focuses on the relative sizes of feature values and adjusts them to comparable magnitudes, often using robust measures to handle outliers.
+
+---
+
+## Numerical Example
+
+Consider the following dataset with two features:
+
+| Feature 1 (Age) | Feature 2 (Income in $) |
+|------------------|-------------------------|
+| 25               | 50,000                 |
+| 30               | 60,000                 |
+| 35               | 80,000                 |
+| 40               | 100,000                |
+| 45               | 150,000                |
+
+---
+
+### Normalization (Min-Max Scaling)
+Normalization rescales the values to a range, typically [0, 1], using the formula:
+
+```
+x' = (x - x_min) / (x_max - x_min)
+```
+
+#### Calculations:
+For **Feature 1 (Age)**:
+- `x_min = 25, x_max = 45`
+
+```
+For x = 25: x' = (25 - 25) / (45 - 25) = 0
+For x = 45: x' = (45 - 25) / (45 - 25) = 1
+```
+
+For **Feature 2 (Income)**:
+- `x_min = 50,000, x_max = 150,000`
+
+```
+For x = 50,000: x' = (50,000 - 50,000) / (150,000 - 50,000) = 0
+For x = 150,000: x' = (150,000 - 50,000) / (150,000 - 50,000) = 1
+```
+
+#### Result:
+| Feature 1 (Age, normalized) | Feature 2 (Income, normalized) |
+|-----------------------------|---------------------------------|
+| 0.0                         | 0.0                            |
+| 0.25                        | 0.1                            |
+| 0.5                         | 0.3                            |
+| 0.75                        | 0.5                            |
+| 1.0                         | 1.0                            |
+
+---
+
+### Scaling (MaxAbs Scaling)
+Scaling adjusts values by dividing them by the maximum absolute value of each feature:
+
+```
+x' = x / |x_max|
+```
+
+#### Calculations:
+For **Feature 1 (Age)**:
+- `x_max = 45`
+
+```
+For x = 25: x' = 25 / 45 ≈ 0.556
+For x = 45: x' = 45 / 45 = 1
+```
+
+For **Feature 2 (Income)**:
+- `x_max = 150,000`
+
+```
+For x = 50,000: x' = 50,000 / 150,000 ≈ 0.333
+For x = 150,000: x' = 150,000 / 150,000 = 1
+```
+
+#### Result:
+| Feature 1 (Age, scaled) | Feature 2 (Income, scaled) |
+|--------------------------|---------------------------|
+| 0.556                    | 0.333                    |
+| 0.667                    | 0.4                      |
+| 0.778                    | 0.533                    |
+| 0.889                    | 0.667                    |
+| 1.0                      | 1.0                      |
+
+---
+
+## Are Both Normalization and Scaling Needed or Are They Alternatives?
+
+Normalization and scaling are **alternatives**, not requirements to be used together in most preprocessing pipelines. The choice between the two depends on the nature of the data and the machine learning algorithm being used.
+
+---
+
+### Key Differences
+
+- **Normalization**:
+  - Focuses on transforming feature values into a specific range (e.g., [0, 1]) or distribution (e.g., mean = 0, standard deviation = 1).
+  - Commonly used when the algorithm relies on distances or gradients and expects features to have similar ranges or distributions (e.g., KNN, SVM, Neural Networks, PCA).
+  - **Example**: Normalizing pixel values in images to the range [0, 1].
+
+- **Scaling**:
+  - Adjusts the magnitude of features without necessarily altering their range or distribution.
+  - Useful when the algorithm is sensitive to feature magnitudes but can tolerate variations in range or outliers (e.g., linear regression, gradient-based models like Logistic Regression, or Lasso).
+  - **Example**: Scaling income values and age values to similar magnitudes for regression analysis.
+
+---
+
+### Are Both Needed?
+
+No, normalization and scaling are not typically used together because they serve overlapping purposes:
+
+1. **Use normalization** when:
+   - The data contains features with varying ranges or distributions.
+   - The algorithm is distance-based or dot-product-based (e.g., KNN, SVM, Neural Networks, PCA).
+
+2. **Use scaling** when:
+   - You need to standardize feature magnitudes without constraining them to a specific range.
+   - The algorithm is less sensitive to distributions but requires uniform feature scaling (e.g., regression-based models or sparse data).
+
+---
+
+### When Both Might Be Considered
+
+In rare cases, both might be used, but this is uncommon and task-specific. For example:
+- You might **scale data robustly** to handle outliers and then **normalize** it to a range [0, 1] for visualization or a specific model requirement.
+
+
 ### Recommended Reading:
 - **["Feature Engineering and Selection: A Practical Approach for Predictive Models" by Max Kuhn and Kjell Johnson](http://www.feat.engineering/)**
 
