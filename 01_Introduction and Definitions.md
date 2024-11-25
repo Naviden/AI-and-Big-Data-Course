@@ -75,24 +75,24 @@ Algorithms can be classified in various ways, each offering distinct perspective
 #### By Implementation
 
 - **Recursive vs. Iterative**:  
-  - **Example (Recursive)**: The **Towers of Hanoi** problem, where disks are moved between pegs following specific rules. The recursive approach breaks the problem into smaller subproblems, moving one disk at a time.
+  - **Example (Recursive)**: The **[Towers of Hanoi](https://www.youtube.com/watch?v=rf6uf3jNjbo)** problem, where disks are moved between pegs following specific rules. The recursive approach breaks the problem into smaller subproblems, moving one disk at a time.
   - **Example (Iterative)**: The **factorial** of a number, which can be calculated using a simple loop to multiply a series of numbers.
 
 - **Serial, Parallel, or Distributed**:  
-  - **Example (Serial)**: The **linear search** algorithm, which sequentially checks each element in a list until the target is found.
-  - **Example (Parallel)**: **Parallel quicksort**, where different segments of the array are sorted simultaneously using multiple processors.
+  - **Example (Serial)**: The **[linear search](https://www.youtube.com/watch?v=19hcyQN8J7o)** algorithm, which sequentially checks each element in a list until the target is found.
+  - **Example (Parallel)**: **Parallel [quicksort](https://www.youtube.com/watch?v=Hoixgm4-P4M)**, where different segments of the array are sorted simultaneously using multiple processors.
   - **Example (Distributed)**: **MapReduce** for processing large data sets, where data is distributed across multiple machines for parallel processing and then aggregated.
 
 - **Deterministic or Non-Deterministic**:  
-  - **Example (Deterministic)**: **Binary search**, which consistently follows the same sequence of steps to find an element in a sorted array.
-  - **Example (Non-Deterministic)**: **Traveling Salesman Problem (TSP)** solved using a heuristic approach like simulated annealing, where the algorithm guesses the route and refines it based on probabilistic decisions.
+  - **Example (Deterministic)**: **[Binary search](https://www.youtube.com/watch?v=j5uXyPJ0Pew)**, which consistently follows the same sequence of steps to find an element in a sorted array.
+  - **Example (Non-Deterministic)**: **[Traveling Salesman Problem (TSP)](https://www.youtube.com/watch?v=1pmBjIZ20pE)** solved using a heuristic approach like simulated annealing, where the algorithm guesses the route and refines it based on probabilistic decisions.
 
 - **Exact or Approximate**:  
-  - **Example (Exact)**: **Dijkstra's algorithm** for finding the shortest path between two nodes in a graph.
-  - **Example (Approximate)**: The **Knapsack problem** solved using a greedy algorithm, where the goal is to find a close-to-optimal solution quickly by selecting items based on a value-to-weight ratio.
+  - **Example (Exact)**: **[Dijkstra's algorithm](https://www.youtube.com/watch?v=_lHSawdgXpI)** for finding the shortest path between two nodes in a graph.
+  - **Example (Approximate)**: The **[Knapsack problem](https://www.youtube.com/watch?v=Q2vDTam9qMQ)** solved using a greedy algorithm, where the goal is to find a close-to-optimal solution quickly by selecting items based on a value-to-weight ratio.
 
 - **Quantum Algorithms**:  
-  - **Example**: **Shor's algorithm** for factoring large integers, which can potentially break widely-used cryptographic systems by exploiting quantum superposition and entanglement.
+  - **Example**: **[Shor's algorithm](https://www.youtube.com/watch?v=5_56TXtFVK4)** for factoring large integers, which can potentially break widely-used cryptographic systems by exploiting quantum superposition and entanglement.
 
 #### By Design Paradigm
 
@@ -100,15 +100,15 @@ Algorithms can be classified in various ways, each offering distinct perspective
   - **Example**: **Password cracking** by trying every possible combination of characters until the correct one is found.
 
 - **Divide and Conquer**:  
-  - **Example**: **Merge sort**, which divides an array into smaller subarrays, sorts them independently, and then merges the sorted subarrays to form the final sorted array.
+  - **Example**: **[Merge sort](https://www.youtube.com/watch?v=4VqmGXwpLqc)**, which divides an array into smaller subarrays, sorts them independently, and then merges the sorted subarrays to form the final sorted array.
 
   - **Example (Decrease and Conquer)**: **Binary search**, where the problem size is reduced by half with each step, until the target element is found.
 
 - **Search and Enumeration**:  
-  - **Example**: **Depth-first search (DFS)** for navigating a maze, where each possible path is explored systematically before backtracking.
+  - **Example**: **[Depth-first search (DFS)](https://www.youtube.com/watch?v=Urx87-NMm6c)** for navigating a maze, where each possible path is explored systematically before backtracking.
 
 - **Randomized Algorithms**:  
-  - **Example (Monte Carlo)**: **Randomized quicksort**, which selects a pivot randomly to reduce the chance of worst-case scenarios.
+  - **Example ([Monte Carlo]())**: **Randomized quicksort**, which selects a pivot randomly to reduce the chance of worst-case scenarios.
   - **Example (Las Vegas)**: **Randomized primality test**, which always correctly identifies whether a number is prime but with varying runtime.
 
 - **Reduction of Complexity**:  
