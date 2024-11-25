@@ -60,7 +60,7 @@ Feature extraction is the process of transforming raw data into a set of feature
 - **Principal Component Analysis (PCA):**
   - PCA reduces the dimensionality of the data by transforming the original features into a new set of uncorrelated features (principal components) that capture the most variance in the data.
   - Mathematical Formulation:
-      $$ Z = XW $$
+      $$Z = XW$$
     - Where $Z$ is the matrix of principal components, $X$ is the original data matrix, and $W$ is the matrix of eigenvectors.
   - Example: Reducing the dimensionality of a dataset with hundreds of features to a smaller set of principal components while retaining most of the variance.
 - **Text Feature Extraction (TF-IDF, Word Embeddings):**
@@ -78,13 +78,13 @@ Normalization is the process of adjusting the values of features to a common sca
 - **Min-Max Scaling:**
   - Rescales the feature values to a fixed range, typically [0, 1].
   - Mathematical Formulation:
-      $$ x' = \frac{x - x_{\text{min}}}{x_{\text{max}} - x_{\text{min}}} $$
+      $$x' = \frac{x - x_{\text{min}}}{x_{\text{max}} - x_{\text{min}}}$$
     - Where $x$ is the original value, $x_{\text{min}}$ and $x_{\text{max}}$ are the minimum and maximum values of the feature.
   - Example: Scaling all pixel values in an image dataset to the range [0, 1].
 - **Z-score Standardization:**
   - Centers the feature values around the mean and scales them based on standard deviation.
   - Mathematical Formulation:
-      $$ z = \frac{x - \mu}{\sigma} $$
+      $$z = \frac{x - \mu}{\sigma}$$
     - Where $x$ is the original value, $\mu$ is the mean, and $\sigma$ is the standard deviation.
   - Example: Standardizing features before applying algorithms like PCA, which assume normally distributed data.
 
@@ -99,13 +99,13 @@ Scaling involves adjusting the range of features to bring them to a similar scal
 - **MaxAbs Scaling:**
   - Scales the data by the maximum absolute value of each feature, preserving the sign of the data.
   - Mathematical Formulation:
-      $$ x' = \frac{x}{|x_{\text{max}}|} $$
+      $$x' = \frac{x}{|x_{\text{max}}|}$$
     - Where $|x_{\text{max}}|$ is the maximum absolute value of the feature.
   - Example: Useful for sparse data like text, where preserving the sparsity pattern is important.
 - **Robust Scaling:**
   - Scales features using statistics that are robust to outliers, such as the median and interquartile range (IQR).
   - Mathematical Formulation:
-      $$ x' = \frac{x - \text{median}(x)}{\text{IQR}(x)} $$
+      $$x' = \frac{x - \text{median}(x)}{\text{IQR}(x)}$$
     - Where IQR is the interquartile range, calculated as $Q3 - Q1$.
   - Example: Scaling features in datasets with outliers that might otherwise dominate the feature scaling.
 
