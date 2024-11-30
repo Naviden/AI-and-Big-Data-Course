@@ -137,6 +137,8 @@ $$
 3. **Fit a Weak Learner**:
    Fit a simple model $h_1(x)$ (e.g., a decision tree stump) to predict the residuals:
    
+_(A decision tree stump is a very simple decision tree with only one split (a tree of depth 1). It is the simplest possible decision tree, making it a common choice for a weak learner in ensemble methods like Gradient Boosting or AdaBoost.)_
+
 $$ 
    h_1(x) = \begin{cases} 
    -3 & \text{if } x = 1 \\
