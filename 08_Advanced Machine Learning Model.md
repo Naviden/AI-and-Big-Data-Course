@@ -116,9 +116,9 @@ Our goal is to predict $y$ using Gradient Boosting.
 
 1. **Initialization**:
    Start with an initial model $F_0(x)$, which is usually the mean of the target values for regression:
-   $$
+  ```math
    F_0(x) = \text{mean}(y) = \frac{3 + 6 + 9}{3} = 6
-  $$
+
 
 2. **Calculate Residuals**:
    Compute the residuals (errors) between the actual values $y$ and the predictions from $F_0(x)$:
@@ -134,7 +134,8 @@ Our goal is to predict $y$ using Gradient Boosting.
 
 3. **Fit a Weak Learner**:
    Fit a simple model $h_1(x)$ (e.g., a decision tree stump) to predict the residuals:
-   $$
+   
+  $$ 
    h_1(x) = \begin{cases} 
    -3 & \text{if } x = 1 \\
    0 & \text{if } x = 2 \\
