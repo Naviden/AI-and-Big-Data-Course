@@ -22,6 +22,7 @@ Support Vector Machines (SVM) are supervised learning models used for classifica
 - **Hyperplane:** A decision boundary that separates different classes in the feature space. The optimal hyperplane is the one that maximizes the margin between the classes.
 - **Margin:** The distance between the hyperplane and the closest data points (support vectors) from each class.
 - **Kernel Trick:** A technique that allows SVM to perform non-linear classification by mapping the input features into a higher-dimensional space.
+
 ![SVM Example](https://scikit-learn.org/stable/_images/sphx_glr_plot_iris_svc_001.png)
 
 Example of classification with SVM classifiers.
