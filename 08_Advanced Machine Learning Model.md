@@ -46,30 +46,11 @@ $$ y_i(w \cdot x_i + b) \geq 1 \text{ for all } i $$
 SVM uses **kernels** to handle both linear and non-linear data. Kernels compute the similarity between two data points in the transformed space using the **kernel trick**, avoiding explicit computation of high-dimensional transformations.
 
 Common kernel types include:
-1. **Linear Kernel:** Suitable for linearly separable data.
+1. **Linear Kernel:** Suitable for linearly separable data. It works directly with the original feature space.
+2. **Polynomial Kernel:** Captures polynomial relationships between features, allowing SVM to model complex patterns.
+3. **Radial Basis Function (RBF) Kernel:** A widely used kernel that handles non-linear data effectively by focusing on the distance between data points.
+4. **Sigmoid Kernel:** Inspired by neural networks, it models relationships in data using a sigmoidal function.
 
-$$ K(x, y) = x \cdot y $$
-
-2. **Polynomial Kernel:** Captures polynomial relationships between features.
-   - Formula:
-     $$
-     K(x, y) = (x \cdot y + c)^d
-     $$
-   - Parameters: \( c \) (constant) and \( d \) (degree of the polynomial).
-
-3. **Radial Basis Function (RBF) Kernel:** Handles non-linear data effectively.
-   - Formula:
-     $$
-     K(x, y) = \exp(-\gamma \|x - y\|^2)
-     $$
-   - Parameter: \( \gamma \) controls the influence of each training example.
-
-4. **Sigmoid Kernel:** Inspired by neural networks.
-   - Formula:
-     $$
-     K(x, y) = \tanh(\alpha x \cdot y + c)
-     $$
-   - Parameters: \( \alpha \) and \( c \).
 
 ### Advantages of SVM:
 - Effective in high-dimensional spaces.
