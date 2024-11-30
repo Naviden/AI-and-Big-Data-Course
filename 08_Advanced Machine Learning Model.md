@@ -24,11 +24,6 @@ Support Vector Machines (SVM) are supervised learning models used for classifica
 - **Support Vectors:** The data points closest to the hyperplane that influence its position and orientation. These points are critical for determining the decision boundary.
 - **Kernel:** A mathematical function that allows SVM to solve non-linear classification problems by mapping the input data into a higher-dimensional space. This transformation enables SVM to find a linear boundary in the transformed space, even if the data is not linearly separable in the original space. 
 
-![SVM Example](https://scikit-learn.org/stable/_images/sphx_glr_plot_iris_svc_001.png)
-
-Example of classification with SVM classifiers.
-_[Image Source](https://scikit-learn.org/stable/modules/svm.html)_
-
 ### Mathematical Formulation:
 Given a set of training data $(x_i, y_i)$ where $x_i$ represents the feature vector and $y_i \in \{-1, 1\}$ represents the class label, SVM aims to find the hyperplane defined by:
 
@@ -51,6 +46,9 @@ Common kernel types include:
 3. **Radial Basis Function (RBF) Kernel:** A widely used kernel that handles non-linear data effectively by focusing on the distance between data points.
 4. **Sigmoid Kernel:** Inspired by neural networks, it models relationships in data using a sigmoidal function.
 
+![Kernel Example](https://mldemystified.com/posts/basics-of-ml/support-vector-machines/images/kernel-svm-example.png#center)
+
+[Image Source](https://mldemystified.com/)
 
 ### Advantages of SVM:
 - Effective in high-dimensional spaces.
