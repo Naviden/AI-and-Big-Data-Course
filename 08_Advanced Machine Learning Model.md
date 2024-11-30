@@ -21,7 +21,8 @@ Support Vector Machines (SVM) are supervised learning models used for classifica
 ### Key Concepts:
 - **Hyperplane:** A decision boundary that separates different classes in the feature space. The optimal hyperplane is the one that maximizes the margin between the classes.
 - **Margin:** The distance between the hyperplane and the closest data points (support vectors) from each class.
-- **Kernel Trick:** A technique that allows SVM to perform non-linear classification by mapping the input features into a higher-dimensional space.
+- **Support Vectors:** The data points closest to the hyperplane that influence its position and orientation. These points are critical for determining the decision boundary.
+- **Kernel:** A mathematical function that allows SVM to solve non-linear classification problems by mapping the input data into a higher-dimensional space. This transformation enables SVM to find a linear boundary in the transformed space, even if the data is not linearly separable in the original space. 
 
 ![SVM Example](https://scikit-learn.org/stable/_images/sphx_glr_plot_iris_svc_001.png)
 
@@ -40,6 +41,43 @@ $$ \text{Maximize } \frac{2}{\|w\|} $$
 Subject to the constraint:
 
 $$ y_i(w \cdot x_i + b) \geq 1 \text{ for all } i $$
+
+### Types of Kernels:
+SVM uses **kernels** to handle both linear and non-linear data. Kernels compute the similarity between two data points in the transformed space using the **kernel trick**, avoiding explicit computation of high-dimensional transformations.
+
+Common kernel types include:
+1. **Linear Kernel:** Suitable for linearly separable data.
+   - Formula: 
+     $$
+     K(x, y) = x \cdot y
+     $$
+
+2. **Polynomial Kernel:** Captures polynomial relationships between features.
+   - Formula:
+     $$
+     K(x, y) = (x \cdot y + c)^d
+     $$
+   - Parameters: \( c \) (constant) and \( d \) (degree of the polynomial).
+
+3. **Radial Basis Function (RBF) Kernel:** Handles non-linear data effectively.
+   - Formula:
+     $$
+     K(x, y) = \exp(-\gamma \|x - y\|^2)
+     $$
+   - Parameter: \( \gamma \) controls the influence of each training example.
+
+4. **Sigmoid Kernel:** Inspired by neural networks.
+   - Formula:
+     $$
+     K(x, y) = \tanh(\alpha x \cdot y + c)
+     $$
+   - Parameters: \( \alpha \) and \( c \).
+
+### Advantages of SVM:
+- Effective in high-dimensional spaces.
+- Robust to overfitting, especially in cases where the number of dimensions is greater than the number of samples.
+- Versatile due to the use of different kernel functions.
+
 
 ### Use Case Example:
 - **Image Classification:** SVMs are often used in tasks like handwriting recognition and face detection, where they can efficiently handle high-dimensional data.
