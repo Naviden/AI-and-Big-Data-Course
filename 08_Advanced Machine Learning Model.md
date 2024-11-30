@@ -47,7 +47,7 @@ SVM uses **kernels** to handle both linear and non-linear data. Kernels compute 
 
 Common kernel types include:
 1. **Linear Kernel:** Suitable for linearly separable data.
-   - Formula: $$ K(x, y) = x \cdot y $$
+$$ K(x, y) = x \cdot y $$
 
 2. **Polynomial Kernel:** Captures polynomial relationships between features.
    - Formula:
