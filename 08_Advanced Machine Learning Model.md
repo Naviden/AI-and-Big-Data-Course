@@ -23,8 +23,10 @@ Support Vector Machines (SVM) are supervised learning models used for classifica
 - **Margin:** The distance between the hyperplane and the closest data points (support vectors) from each class.
 - **Kernel Trick:** A technique that allows SVM to perform non-linear classification by mapping the input features into a higher-dimensional space.
 ![SVM Example](https://scikit-learn.org/stable/_images/sphx_glr_plot_iris_svc_001.png)
+
 Example of classification with SVM classifiers.
 _[Image Source](https://scikit-learn.org/stable/modules/svm.html)_
+
 ### Mathematical Formulation:
 Given a set of training data $(x_i, y_i)$ where $x_i$ represents the feature vector and $y_i \in \{-1, 1\}$ represents the class label, SVM aims to find the hyperplane defined by:
 
@@ -40,6 +42,9 @@ $$ y_i(w \cdot x_i + b) \geq 1 \text{ for all } i $$
 
 ### Use Case:
 - **Image Classification:** SVMs are often used in tasks like handwriting recognition and face detection, where they can efficiently handle high-dimensional data.
+
+
+Take a look at this [short video series](https://www.youtube.com/watch?v=efR1C6CvhmE&t=743s) by StatQuest for more details.
 
 ---
 
