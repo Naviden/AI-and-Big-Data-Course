@@ -3,6 +3,7 @@
 ### Topics Covered:
 - **Support Vector Machines (SVM)**
 - **Gradient Boosting Machines (GBM)**
+- **Neural Networks (RNN)**
 - **Recurrent Neural Networks (RNN)**
 - **Generative Adversarial Networks (GANs)**
 
@@ -183,8 +184,128 @@ Gradient Boosting builds the model iteratively by combining weak learners, each 
 - Watch this [short video series](https://www.youtube.com/watch?v=3CC4N4z3GJc) by StatQuest for more details about the math behind GBM.
 - Take a look at [this notebook](https://github.com/Naviden/AI-and-Big-Data-Course/blob/main/Python%20Code/Algorithms/An%20Intro%20to%20GBM.ipynb) in which we see GBM in action
 ---
+## 3. Neural Networks (NN)
 
-## 3. Recurrent Neural Networks (RNN)
+### Definition:
+Neural Networks (NN) are a class of machine learning models inspired by the structure and function of the human brain. They consist of layers of interconnected nodes (neurons) that process input data, learn patterns, and make predictions. Neural networks are widely used for tasks like image recognition, natural language processing, and regression.
+
+### Key Concepts:
+- **Neuron:** The basic unit of a neural network that receives inputs, applies a weighted sum, adds a bias, and passes the result through an activation function.
+- **Layers:** Neural networks are composed of:
+  - **Input Layer:** Receives the raw input features.
+  - **Hidden Layers:** Process the data using weights and biases.
+  - **Output Layer:** Produces the final predictions.
+- **Activation Function:** A function applied to the output of a neuron to introduce non-linearity (e.g., ReLU, sigmoid, or tanh).
+- **Backpropagation:** An algorithm used to update weights by minimizing the error between predicted and actual outputs through gradient descent.
+
+### Mathematical Formulation:
+In a single-layer neural network:
+
+1. Compute the weighted sum for a neuron:
+
+$$
+z = \sum_{i=1}^{n} w_i x_i + b
+$$
+
+   Where:
+   - $x_i$ are input features,
+   - $w_i$ are weights,
+   - $b$ is the bias.
+
+2. Apply an activation function $f(z)$:
+
+$$
+a = f(z)
+$$
+
+3. Use backpropagation to minimize the loss $L(y, \hat{y})$:
+
+$$
+\text{Update weights: } w_i \leftarrow w_i - \eta \frac{\partial L}{\partial w_i}
+$$
+
+   Where:
+   - $\eta$ is the learning rate,
+   - $L$ is the loss function (e.g., mean squared error or cross-entropy).
+
+### Numerical Example of a Neural Network
+
+#### Problem:
+We have a simple dataset with one feature $x$ and a binary target $y$:
+
+| $x$ | $y$ |
+|------|------|
+| 1    | 0    |
+| 2    | 0    |
+| 3    | 1    |
+
+#### Steps:
+
+1. **Initialization**:
+   - Weights: $w = 0.5$
+   - Bias: $b = 0$
+   - Learning rate: $\eta = 0.1$
+
+2. **Forward Pass**:
+   For each input $x$, compute:
+
+$$
+z = w \cdot x + b
+$$
+
+   Apply the sigmoid activation function:
+
+$$
+a = \frac{1}{1 + e^{-z}}
+$$
+
+   Predict the output: $\hat{y} = a$.
+
+   Example for $x = 1$:
+
+$$
+z = 0.5 \cdot 1 + 0 = 0.5, \quad a = \frac{1}{1 + e^{-0.5}} \approx 0.62
+$$
+
+3. **Compute Loss**:
+   Use the binary cross-entropy loss:
+
+$$
+L = -\frac{1}{N} \sum_{i=1}^{N} \left[ y_i \log(\hat{y}_i) + (1 - y_i) \log(1 - \hat{y}_i) \right]
+$$
+
+   For $x = 1$, $y = 0$:
+
+$$
+L = -[0 \cdot \log(0.62) + (1 - 0) \cdot \log(1 - 0.62)] \approx 0.48
+$$
+
+4. **Backpropagation**:
+   Update the weights and bias:
+
+$$
+w \leftarrow w - \eta \frac{\partial L}{\partial w}, \quad b \leftarrow b - \eta \frac{\partial L}{\partial b}
+$$
+
+   Gradients for $x = 1$:
+
+$$
+\frac{\partial L}{\partial w} = (a - y) \cdot x = (0.62 - 0) \cdot 1 = 0.62
+$$
+
+$$
+w = 0.5 - 0.1 \cdot 0.62 = 0.438
+$$
+
+5. **Repeat**:
+   Continue for all data points and epochs until the loss converges.
+
+#### Key Takeaway:
+Neural networks learn by iteratively adjusting weights and biases to minimize the error (loss). The combination of multiple layers and non-linear activation functions enables them to model complex patterns in data.
+
+---
+
+## 4. Recurrent Neural Networks (RNN)
 
 ### Definition:
 Recurrent Neural Networks (RNN) are a class of neural networks designed for sequential data. Unlike feedforward neural networks, RNNs have connections that form cycles, allowing them to maintain a memory of previous inputs, making them ideal for tasks like time series analysis and natural language processing.
@@ -215,7 +336,7 @@ Where:
 
 ---
 
-## 4. Generative Adversarial Networks (GANs)
+## 5. Generative Adversarial Networks (GANs)
 
 ### Definition:
 Generative Adversarial Networks (GANs) are a class of neural networks used for unsupervised learning tasks. GANs consist of two networks, a generator and a discriminator, that are trained simultaneously. The generator creates fake data, while the discriminator tries to distinguish between real and fake data.
