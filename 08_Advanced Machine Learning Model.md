@@ -123,6 +123,7 @@ $$
 
 2. **Calculate Residuals**:
    Compute the residuals (errors) between the actual values $y$ and the predictions from $F_0(x)$:
+
 $$
    r_i = y_i - F_0(x)
 $$
