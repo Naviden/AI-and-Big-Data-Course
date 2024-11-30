@@ -178,7 +178,7 @@ $$
    Continue by calculating new residuals based on $F_1(x)$, fitting a new weak learner $h_2(x)$, and updating the model $F_2(x)$. Repeat this process for additional iterations until the residuals are minimized or a stopping criterion is met.
 
 #### Key Takeaway:
-Gradient Boosting builds the model iteratively by combining weak learners, each correcting the errors of the previous model. The learning rate \(\alpha\) controls how much each weak learner contributes to the final model.
+Gradient Boosting builds the model iteratively by combining weak learners, each correcting the errors of the previous model. The learning rate $\alpha$ controls how much each weak learner contributes to the final model.
 #### Further Learning Resources
 - Watch this [short video series](https://www.youtube.com/watch?v=3CC4N4z3GJc) by StatQuest for more details about the math behind GBM.
 - Take a look at [this notebook](https://github.com/Naviden/AI-and-Big-Data-Course/blob/main/Python%20Code/Algorithms/An%20Intro%20to%20GBM.ipynb) in which we see GBM in action
