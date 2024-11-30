@@ -40,7 +40,7 @@ Subject to the constraint:
 
 $$ y_i(w \cdot x_i + b) \geq 1 \text{ for all } i $$
 
-### Use Case:
+### Use Case Example:
 - **Image Classification:** SVMs are often used in tasks like handwriting recognition and face detection, where they can efficiently handle high-dimensional data.
 
 
@@ -68,8 +68,10 @@ Where:
 - $\alpha$ is the learning rate,
 - $h_m(x)$ is the new model fitted to the residual errors of $F_{m-1}(x)$.
 
-### Use Case:
+### Use Case Example:
 - **Predictive Modeling:** GBM is widely used in tasks like credit scoring, where accurate predictions from structured data are crucial.
+
+Take a look at this [short video series](https://www.youtube.com/watch?v=3CC4N4z3GJc) by StatQuest for more details.
 
 ---
 
