@@ -24,18 +24,6 @@ Support Vector Machines (SVM) are supervised learning models used for classifica
 - **Support Vectors:** The data points closest to the hyperplane that influence its position and orientation. These points are critical for determining the decision boundary.
 - **Kernel:** A mathematical function that allows SVM to solve non-linear classification problems by mapping the input data into a higher-dimensional space. This transformation enables SVM to find a linear boundary in the transformed space, even if the data is not linearly separable in the original space. 
 
-### Mathematical Formulation:
-Given a set of training data $(x_i, y_i)$ where $x_i$ represents the feature vector and $y_i \in \{-1, 1\}$ represents the class label, SVM aims to find the hyperplane defined by:
-
-$$ w \cdot x + b = 0 $$
-
-Where $w$ is the weight vector and $b$ is the bias. The objective is to maximize the margin:
-
-$$ \text{Maximize } \frac{2}{\|w\|} $$
-
-Subject to the constraint:
-
-$$ y_i(w \cdot x_i + b) \geq 1 \text{ for all } i $$
 
 ### Types of Kernels:
 SVM uses **kernels** to handle both linear and non-linear data. Kernels compute the similarity between two data points in the transformed space using the **kernel trick**, avoiding explicit computation of high-dimensional transformations.
@@ -50,10 +38,35 @@ Common kernel types include:
 
 [Image Source](https://mldemystified.com/)
 
-### Advantages of SVM:
-- Effective in high-dimensional spaces.
-- Robust to overfitting, especially in cases where the number of dimensions is greater than the number of samples.
-- Versatile due to the use of different kernel functions.
+
+- The **dotted lines** in each plot represent the **margins** around the hyperplane, which are determined by the support vectors. These margins indicate the regions where the classification confidence decreases. 
+
+    - In the **Linear Kernel** plot, the margins are straight because the separation is linear.
+    - In the **Polynomial**, **RBF**, and **Sigmoid Kernel** plots, the margins are curved, showcasing the more complex decision boundaries created by these kernels to handle non-linear data.
+
+- The **solid black line** in each plot represents the main decision boundary (hyperplane) that separates the classes.
+
+
+
+### Mathematical Formulation:
+Given a set of training data $(x_i, y_i)$ where $x_i$ represents the feature vector and $y_i \in \{-1, 1\}$ represents the class label, SVM aims to find the hyperplane defined by:
+
+$$ w \cdot x + b = 0 $$
+
+Where $w$ is the weight vector and $b$ is the bias. The objective is to maximize the margin:
+
+$$ \text{Maximize } \frac{2}{\|w\|} $$
+
+Subject to the constraint:
+
+$$ y_i(w \cdot x_i + b) \geq 1 \text{ for all } i $$
+
+Remember that this mathematical formulation is not specific to any particular kernel. It represents the general optimization objective of SVM, applicable to both linear and non-linear data.
+
+- For **linear SVM**, the formulation applies directly in the original feature space, as the data can be separated by a straight hyperplane.
+- For **non-linear SVM**, kernels are used to map the data into a higher-dimensional space where it becomes linearly separable. The optimization still follows the same formulation but operates in the transformed feature space defined by the kernel.
+
+The choice of kernel affects how the data is transformed, but the underlying mathematical objective and constraints remain consistent across all kernel types.
 
 
 ### Use Case Example:
