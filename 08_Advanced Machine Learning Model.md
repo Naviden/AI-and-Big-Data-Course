@@ -97,11 +97,10 @@ Where:
 - $\alpha$ is the learning rate,
 - $h_m(x)$ is the new model fitted to the residual errors of $F_{m-1}(x)$.
 
-### Use Case Example:
-- **Predictive Modeling:** GBM is widely used in tasks like credit scoring, where accurate predictions from structured data are crucial.
 
-Take a look at this [short video series](https://www.youtube.com/watch?v=3CC4N4z3GJc) by StatQuest for more details.
-
+#### Further Learning Resources
+- Watch this [short video series](https://www.youtube.com/watch?v=3CC4N4z3GJc) by StatQuest for more details about the math behind GBM.
+- Take a look at [this notebook](https://github.com/Naviden/AI-and-Big-Data-Course/blob/main/Python%20Code/Algorithms/An%20Intro%20to%20GBM.ipynb) in which we see SVM in action
 ---
 
 ## 3. Recurrent Neural Networks (RNN)
