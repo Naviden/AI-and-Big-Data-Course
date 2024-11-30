@@ -3,9 +3,7 @@
 ### Topics Covered:
 - **Support Vector Machines (SVM)**
 - **Gradient Boosting Machines (GBM)**
-- **Neural Networks (RNN)**
-- **Recurrent Neural Networks (RNN)**
-- **Generative Adversarial Networks (GANs)**
+
 
 ### Objectives:
 1. Understand the key concepts and applications of advanced machine learning models.

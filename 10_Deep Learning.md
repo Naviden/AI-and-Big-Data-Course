@@ -3,6 +3,7 @@
 ### Topics Covered:
 - **Convolutional Neural Networks (CNNs)**
 - **Recurrent Neural Networks (RNNs)**
+- **Generative Adversarial Networks (GANs)**
 - **Transfer Learning**
 
 ### Objectives:
@@ -38,37 +39,92 @@ Where:
 - **Image Segmentation:** Techniques like U-Net use CNNs to partition an image into meaningful segments.
 
 ---
-
 ## 2. Recurrent Neural Networks (RNNs)
 
 ### Definition:
-Recurrent Neural Networks (RNNs) are a class of deep learning models designed for processing sequential data. Unlike feedforward neural networks, RNNs have loops in them, allowing information to be passed from one step of the sequence to the next, making them suitable for tasks where the context is crucial.
+Recurrent Neural Networks (RNNs) are a type of neural network designed specifically for processing sequential data, such as time series, text, or audio. Unlike traditional feedforward networks, RNNs use feedback loops to maintain a memory of previous inputs, enabling them to learn temporal patterns and dependencies.
+
+RNNs are considered a part of **deep learning** because they have the following characteristics:
+- **Neural Network Architecture:** RNNs are based on layers of interconnected nodes, similar to other deep learning models.
+- **Training with Backpropagation Through Time (BPTT):** RNNs use a variant of backpropagation to optimize weights over time steps, a hallmark of deep learning methods.
+- **Hierarchical Representations:** RNNs learn hierarchical and abstract representations of data over time.
+- **Advanced Variants:** Extensions like **Long Short-Term Memory (LSTM)** and **Gated Recurrent Unit (GRU)** address the challenges of training RNNs, making them highly effective for complex sequential tasks.
 
 ### Key Concepts:
-- **Sequence Modeling:** RNNs are used to model sequences of data, such as time series or text, where each input is dependent on previous inputs.
-- **Long Short-Term Memory (LSTM):** A type of RNN designed to overcome the vanishing gradient problem, LSTMs can capture long-range dependencies in sequences.
-- **Gated Recurrent Unit (GRU):** A simplified version of LSTM that uses fewer parameters but performs similarly in many tasks.
+- **Hidden State:** At each time step, RNNs compute a hidden state that captures information about the current input and previous hidden states.
+- **Sequential Dependency:** RNNs process data step by step, maintaining temporal relationships across sequences.
+- **Memory:** The feedback loop in RNNs allows the network to retain context over time, essential for tasks like language modeling and speech recognition.
+- **Vanishing Gradient Problem:** Standard RNNs often struggle to learn long-term dependencies due to vanishing gradients during training, which is addressed by LSTMs and GRUs.
 
 ### Mathematical Formulation:
-The hidden state $h_t$ at time step $t$ in a standard RNN is computed as:
+At each time step $t$, the RNN computes:
 
-$$ h_t = g(W_h \cdot h_{t-1} + W_x \cdot x_t + b) $$
+$$
+h_t = f(W_h h_{t-1} + W_x x_t + b_h)
+$$
 
 Where:
+- $h_t$ is the hidden state at time $t$,
 - $h_{t-1}$ is the hidden state from the previous time step,
 - $x_t$ is the input at time $t$,
 - $W_h$ and $W_x$ are weight matrices,
-- $b$ is the bias vector,
-- $g$ is the activation function (e.g., tanh or ReLU).
+- $b_h$ is the bias vector,
+- $f$ is the activation function (e.g., tanh or ReLU).
 
-### Applications:
-- **Natural Language Processing (NLP):** RNNs are used in tasks like language translation, where the model needs to understand the context of a sentence.
-- **Speech Recognition:** RNNs power systems that convert spoken language into text.
-- **Time Series Forecasting:** RNNs are employed to predict future values in a time series, such as stock prices or weather patterns.
+The output $y_t$ at each time step is computed as:
+
+$$
+y_t = g(W_y h_t + b_y)
+$$
+
+Where:
+- $W_y$ is the weight matrix for the output layer,
+- $b_y$ is the bias vector for the output layer,
+- $g$ is the activation function for the output layer.
+
+### Variants of RNNs:
+1. **Long Short-Term Memory (LSTM):** Introduces gating mechanisms (input, forget, and output gates) to manage long-term dependencies.
+2. **Gated Recurrent Unit (GRU):** Simplifies LSTMs by combining input and forget gates into a single update gate.
+
+### Why RNNs Are Deep Learning:
+1. **Sequential Data Processing:** RNNs handle sequential data and learn temporal dependencies, a core capability of deep learning.
+2. **Layered Architecture:** RNNs can be stacked to create deep architectures with multiple layers.
+3. **Training Complexity:** RNNs require techniques like BPTT and the use of GPUs or TPUs, making them part of computationally intensive deep learning workflows.
+
+### Applications of RNNs:
+- Natural Language Processing (e.g., language translation, text generation)
+- Speech Recognition
+- Time Series Prediction
+- Video Processing
+- Music Composition
+
+RNNs and their advanced variants, LSTMs and GRUs, are essential tools in the deep learning toolbox, enabling powerful models for sequential data.
 
 ---
+## 3. Generative Adversarial Networks (GANs)
 
-## 3. Transfer Learning
+### Definition:
+Generative Adversarial Networks (GANs) are a class of neural networks used for unsupervised learning tasks. GANs consist of two networks, a generator and a discriminator, that are trained simultaneously. The generator creates fake data, while the discriminator tries to distinguish between real and fake data.
+
+### Key Concepts:
+- **Generator:** A neural network that generates synthetic data samples by mapping random noise to data space.
+- **Discriminator:** A neural network that evaluates whether a given sample is real (from the training set) or fake (generated).
+- **Adversarial Training:** The process in which the generator and discriminator are trained together in a zero-sum game until the generator produces data indistinguishable from real data.
+
+### Mathematical Formulation:
+The generator $G(z)$ maps noise $z$ from a latent space to the data space, while the discriminator $D(x)$ outputs the probability that a given sample $x$ is real. The objective function for GANs is:
+
+$$ \min_G \max_D \mathbb{E}_{x \sim p_{\text{data}}(x)}[\log D(x)] + \mathbb{E}_{z \sim p_z(z)}[\log(1 - D(G(z)))] $$
+
+Where:
+- $p_{\text{data}}(x)$ is the distribution of the real data,
+- $p_z(z)$ is the distribution of the input noise.
+
+### Use Case:
+- **Image Generation:** GANs are widely used for generating realistic images, such as creating high-resolution photos from low-resolution inputs or generating artwork.
+
+---
+## 4. Transfer Learning
 
 ### Definition:
 Transfer Learning is a technique in deep learning where a model developed for a particular task is reused as the starting point for a model on a second, related task. This approach leverages the knowledge gained from a pre-trained model, making it easier and faster to train models on new tasks with limited data.
