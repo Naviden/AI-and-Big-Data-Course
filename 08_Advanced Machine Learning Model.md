@@ -116,6 +116,7 @@ Our goal is to predict $y$ using Gradient Boosting.
 
 1. **Initialization**:
    Start with an initial model $F_0(x)$, which is usually the mean of the target values for regression:
+   
 $$
    F_0(x) = \text{mean}(y) = \frac{3 + 6 + 9}{3} = 6
 $$
