@@ -161,13 +161,13 @@ Scaling involves adjusting the range of features to bring them to a similar scal
 
 ---
 
-## Difference Between Normalization and Scaling
+### Difference Between Normalization and Scaling
 
 Normalization and scaling are essential preprocessing techniques used to prepare data for machine learning algorithms. While they may seem similar, they serve different purposes and operate in distinct ways.
 
 ---
 
-### Normalization
+#### Normalization
 Normalization adjusts the values of features to a common scale, often between a specified range like [0, 1], without distorting the relative differences between the feature values. This process is particularly beneficial for algorithms sensitive to the scale of data, such as KNN, SVM, or PCA. Normalization often involves transforming the distribution of feature values.
 
 - **Focus**: Brings features to a common scale by modifying their distribution.
@@ -177,7 +177,7 @@ Normalization adjusts the values of features to a common scale, often between a 
 
 ---
 
-### Scaling
+#### Scaling
 Scaling adjusts the magnitude of feature values to make them comparable. Unlike normalization, scaling does not constrain the data to a specific range but ensures that features with different units or magnitudes do not disproportionately influence the model.
 
 - **Focus**: Adjusts the range of feature values to make them comparable by magnitude.
@@ -187,7 +187,7 @@ Scaling adjusts the magnitude of feature values to make them comparable. Unlike 
 
 ---
 
-### Key Distinction
+#### Key Distinction
 - **Normalization** often involves transforming the distribution of data and focuses on statistical properties like the mean and standard deviation.
 - **Scaling** focuses on the relative sizes of feature values and adjusts them to comparable magnitudes, often using robust measures to handle outliers.
 
@@ -207,7 +207,7 @@ Consider the following dataset with two features:
 
 ---
 
-### Normalization (Min-Max Scaling)
+#### Normalization (Min-Max Scaling)
 | Age, normalized |Income, normalized |
 |-----------------------------|---------------------------------|
 | 0.0                         | 0.0                            |
@@ -218,7 +218,7 @@ Consider the following dataset with two features:
 
 ---
 
-### Scaling (MaxAbs Scaling)
+#### Scaling (MaxAbs Scaling)
 Scaling adjusts values by dividing them by the maximum absolute value of each feature:
 | Age, scaled |Income, scaled)|
 |--------------------------|---------------------------|
@@ -230,13 +230,13 @@ Scaling adjusts values by dividing them by the maximum absolute value of each fe
 
 ---
 
-## Are Both Normalization and Scaling Needed or Are They Alternatives?
+### Are Both Normalization and Scaling Needed or Are They Alternatives?
 
 Normalization and scaling are **alternatives**, not requirements to be used together in most preprocessing pipelines. The choice between the two depends on the nature of the data and the machine learning algorithm being used.
 
 ---
 
-### Key Differences
+#### Key Differences
 
 - **Normalization**:
   - Focuses on transforming feature values into a specific range (e.g., [0, 1]) or distribution (e.g., mean = 0, standard deviation = 1).
@@ -250,7 +250,7 @@ Normalization and scaling are **alternatives**, not requirements to be used toge
 
 ---
 
-### Are Both Needed?
+#### Are Both Needed?
 
 No, normalization and scaling are not typically used together because they serve overlapping purposes:
 
@@ -264,7 +264,7 @@ No, normalization and scaling are not typically used together because they serve
 
 ---
 
-### When Both Might Be Considered
+#### When Both Might Be Considered
 
 In rare cases, both might be used, but this is uncommon and task-specific. For example:
 - You might **scale data robustly** to handle outliers and then **normalize** it to a range [0, 1] for visualization or a specific model requirement.
