@@ -97,10 +97,82 @@ Where:
 - $\alpha$ is the learning rate,
 - $h_m(x)$ is the new model fitted to the residual errors of $F_{m-1}(x)$.
 
+### Numerical Example of Gradient Boosting
 
+To clarify the concept of Gradient Boosting, let's consider a simple regression example:
+
+#### Problem:
+We have a dataset with one feature $x$ and a target value $y$:
+
+| $x$ | $y$ |
+|------|------|
+| 1    | 3    |
+| 2    | 6    |
+| 3    | 9    |
+
+Our goal is to predict $y$ using Gradient Boosting.
+
+#### Steps:
+
+1. **Initialization**:
+   Start with an initial model $F_0(x)$, which is usually the mean of the target values for regression:
+   \[
+   F_0(x) = \text{mean}(y) = \frac{3 + 6 + 9}{3} = 6
+   \]
+
+2. **Calculate Residuals**:
+   Compute the residuals (errors) between the actual values $y$ and the predictions from $F_0(x)$:
+   \[
+   r_i = y_i - F_0(x)
+   \]
+
+   | $x$ | $y$ | $F_0(x)$ | Residual ($r = y - F_0(x)$) |
+   |------|------|------------|-----------------------------|
+   | 1    | 3    | 6          | -3                          |
+   | 2    | 6    | 6          | 0                           |
+   | 3    | 9    | 6          | 3                           |
+
+3. **Fit a Weak Learner**:
+   Fit a simple model $h_1(x)$ (e.g., a decision tree stump) to predict the residuals:
+   \[
+   h_1(x) = \begin{cases} 
+   -3 & \text{if } x = 1 \\
+   0 & \text{if } x = 2 \\
+   3 & \text{if } x = 3
+   \end{cases}
+   \]
+
+4. **Update the Model**:
+   Add the weak learner $h_1(x)$ to the current model $F_0(x)$ with a learning rate $\alpha = 0.5$:
+   \[
+   F_1(x) = F_0(x) + \alpha h_1(x)
+   \]
+
+   For each $x$:
+   \[
+   F_1(1) = 6 + 0.5(-3) = 4.5
+   \]
+   \[
+   F_1(2) = 6 + 0.5(0) = 6
+   \]
+   \[
+   F_1(3) = 6 + 0.5(3) = 7.5
+   \]
+
+   | $x$ | $y$ | $F_1(x)$ |
+   |------|------|------------|
+   | 1    | 3    | 4.5        |
+   | 2    | 6    | 6          |
+   | 3    | 9    | 7.5        |
+
+5. **Repeat**:
+   Continue by calculating new residuals based on $F_1(x)$, fitting a new weak learner $h_2(x)$, and updating the model $F_2(x)$. Repeat this process for additional iterations until the residuals are minimized or a stopping criterion is met.
+
+#### Key Takeaway:
+Gradient Boosting builds the model iteratively by combining weak learners, each correcting the errors of the previous model. The learning rate \(\alpha\) controls how much each weak learner contributes to the final model.
 #### Further Learning Resources
 - Watch this [short video series](https://www.youtube.com/watch?v=3CC4N4z3GJc) by StatQuest for more details about the math behind GBM.
-- Take a look at [this notebook](https://github.com/Naviden/AI-and-Big-Data-Course/blob/main/Python%20Code/Algorithms/An%20Intro%20to%20GBM.ipynb) in which we see SVM in action
+- Take a look at [this notebook](https://github.com/Naviden/AI-and-Big-Data-Course/blob/main/Python%20Code/Algorithms/An%20Intro%20to%20GBM.ipynb) in which we see GBM in action
 ---
 
 ## 3. Recurrent Neural Networks (RNN)
