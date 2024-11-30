@@ -127,7 +127,7 @@ $$
    r_i = y_i - F_0(x)
 $$
 
-   | $x$ | $y$ | $F_0(x)$ | Residual ($r = y - F_0(x)$) |
+   | $x$ | $y$ | $F_0(x)$ | Residual $(r = y - F_0(x))$ |
    |------|------|------------|-----------------------------|
    | 1    | 3    | 6          | -3                          |
    | 2    | 6    | 6          | 0                           |
@@ -146,11 +146,13 @@ $$
 
 4. **Update the Model**:
    Add the weak learner $h_1(x)$ to the current model $F_0(x)$ with a learning rate $\alpha = 0.5$:
+   
 $$
    F_1(x) = F_0(x) + \alpha h_1(x)
 $$
 
    For each $x$:
+   
 $$
    F_1(1) = 6 + 0.5(-3) = 4.5
 $$
