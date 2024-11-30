@@ -69,11 +69,11 @@ Remember that this mathematical formulation is not specific to any particular ke
 The choice of kernel affects how the data is transformed, but the underlying mathematical objective and constraints remain consistent across all kernel types.
 
 
-### Use Case Example:
-- **Image Classification:** SVMs are often used in tasks like handwriting recognition and face detection, where they can efficiently handle high-dimensional data.
+#### Further Learning Resources
 
+- Watch this [short video series](https://www.youtube.com/watch?v=efR1C6CvhmE&t=743s) by StatQuest for more details about the math behind SVM.
 
-Take a look at this [short video series](https://www.youtube.com/watch?v=efR1C6CvhmE&t=743s) by StatQuest for more details.
+- Take a look at [this notebook](https://github.com/Naviden/AI-and-Big-Data-Course/blob/main/Python%20Code/Algorithms/An%20Intro%20to%20SVM.ipynb) in which we see SVM in action
 
 ---
 
