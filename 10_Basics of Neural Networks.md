@@ -128,4 +128,4 @@ Neural networks learn by iteratively adjusting weights and biases to minimize th
 - **[Neural Networks from scratch in Python](https://nnfs.io/order)**
 - **["Pattern Recognition and Machine Learning" by Christopher M. Bishop](https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf)**
 - **["An Introduction to Statistical Learning" by Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani](https://www.stat.berkeley.edu/users/rabbee/s154/ISLR_First_Printing.pdf)**
-- **["Deep Learning" by Ian Goodfellow, Yoshua Bengio, and Aaron Courville](https://www.deeplearningbook.org/)**
+- **["Alice’s Adventures in a differentiable wonderland: A primer on designing neural networks (Volume I)" by Simone Scardapane](https://www.amazon.it/dp/B0D9QHS5NG?ref=ppx_yo2ov_dt_b_fed_asin_title)**
