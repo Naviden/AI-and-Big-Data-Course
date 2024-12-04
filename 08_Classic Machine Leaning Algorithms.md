@@ -67,20 +67,23 @@ We have a simple dataset with one feature $x$ and a continuous target $y$:
 
 1. **Model Representation**:
    Assume a simple linear regression model:
+   
    $$
    y = \beta_0 + \beta_1 x
    $$
 
-2. **Initialize Parameters**:
+3. **Initialize Parameters**:
    Start with initial guesses for the coefficients, e.g., $\beta_0 = 0$ and $\beta_1 = 1$.
 
-3. **Make Predictions**:
+4. **Make Predictions**:
    Use the current parameters to predict $y$ for each $x$:
+   
    $$
    \hat{y} = \beta_0 + \beta_1 x
    $$
 
    Example for $x = 1$:
+   
    $$
    \hat{y} = 0 + 1 \cdot 1 = 1
    $$
@@ -92,8 +95,9 @@ We have a simple dataset with one feature $x$ and a continuous target $y$:
    | 2   | 5   | 2         |
    | 3   | 7   | 3         |
 
-4. **Compute Loss**:
+6. **Compute Loss**:
    Calculate the Mean Squared Error (MSE):
+   
    $$
    \text{MSE} = \frac{1}{N} \sum_{i=1}^{N} (y_i - \hat{y}_i)^2
    $$
@@ -103,7 +107,7 @@ We have a simple dataset with one feature $x$ and a continuous target $y$:
    \text{MSE} = \frac{1}{3} \left[(3 - 1)^2 + (5 - 2)^2 + (7 - 3)^2\right] = \frac{1}{3} (4 + 9 + 16) = 9.67
    $$
 
-5. **Update Coefficients**:
+8. **Update Coefficients**:
    Use gradient descent to update $\beta_0$ and $\beta_1$:
    $$
    \beta_0 \leftarrow \beta_0 - \eta \frac{\partial \text{MSE}}{\partial \beta_0}, \quad \beta_1 \leftarrow \beta_1 - \eta \frac{\partial \text{MSE}}{\partial \beta_1}
@@ -111,7 +115,7 @@ We have a simple dataset with one feature $x$ and a continuous target $y$:
 
    Where $\eta$ is the learning rate.
 
-6. **Repeat**:
+9. **Repeat**:
    Iterate the process until the loss converges.
 
 ### Why Regression Models Are Important:
