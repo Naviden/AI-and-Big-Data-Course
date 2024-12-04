@@ -38,6 +38,8 @@ Where:
 - **Object Detection:** CNN-based models, such as YOLO (You Only Look Once), are used to detect and localize objects within an image.
 - **Image Segmentation:** Techniques like U-Net use CNNs to partition an image into meaningful segments.
 
+Take a look at [Image Classification with Convolutional Neural Networks (CNNs)](https://www.youtube.com/watch?v=HGwBXDKFk9I) video for more details.
+
 ---
 ## 2. Recurrent Neural Networks (RNNs)
 
